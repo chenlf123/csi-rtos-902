@@ -36,5 +36,5 @@ void board_init(void)
     /* init the console*/
     console_handle = csi_usart_initialize(CONSOLE_IDX, NULL);
     /* config the UART */
-    csi_usart_config(console_handle, 19200, USART_MODE_ASYNCHRONOUS, USART_PARITY_NONE, USART_STOP_BITS_1, USART_DATA_BITS_8);
+    csi_usart_config(console_handle, 115200, USART_MODE_ASYNCHRONOUS, USART_PARITY_NONE, USART_STOP_BITS_1, USART_DATA_BITS_8);
 }

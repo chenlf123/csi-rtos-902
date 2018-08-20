@@ -4,3 +4,4 @@ Out
 include/config.h
 .config.old
 tools/output/
+out
