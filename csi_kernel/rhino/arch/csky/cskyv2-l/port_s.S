@@ -14,35 +14,8 @@
  * limitations under the License.
  */
 
-#include <k_config.h>
-
-#define VIC_TSPDR 0XE000EC08
-
-.extern g_active_task
-.extern g_preferred_ready_task
-.extern krhino_task_sched_stats_get
-.extern krhino_stack_ovf_check
-/******************************************************************************
- *                                 EXPORT FUNCTIONS
- ******************************************************************************/
-
-.global cpu_intrpt_save
-.global cpu_intrpt_restore
-.global cpu_task_switch
-.global cpu_intrpt_switch
-.global cpu_first_task_start
-.global tspend_handler
-
-/******************************************************************************
- *                                 EQUATES
- ******************************************************************************/
-
-/******************************************************************************
- *                                 CODE GENERATION DIRECTIVES
- ******************************************************************************/
-
-.text
-.align 2
+/* Enable interrupts when returning from the handler */
+#define MSTATUS_PRV1 0x1880
 
 /******************************************************************************
  * Functions:
@@ -50,16 +23,18 @@
  *     void   cpu_intrpt_restore(size_t psr);
  ******************************************************************************/
 
+.global cpu_intrpt_save
 .type cpu_intrpt_save, %function
 cpu_intrpt_save:
-    mfcr    r0, psr
-    psrclr  ie
-    rts
+    csrr    a0, mstatus
+    csrc    mstatus, 8
+    ret
 
+.global cpu_intrpt_restore
 .type cpu_intrpt_restore, %function
 cpu_intrpt_restore:
-    mtcr    r0, psr
-    rts
+    csrw    mstatus, a0
+    ret
 
 /******************************************************************************
  * Functions:
@@ -67,82 +42,167 @@ cpu_intrpt_restore:
  *     void cpu_task_switch(void);
  ******************************************************************************/
 
+.global cpu_task_switch
 .type cpu_task_switch, %function
 cpu_task_switch:
-    lrw    r0, VIC_TSPDR
-    bgeni  r1, 0
-    stw    r1, (r0)
-    rts
+    la     a0, g_intrpt_nested_level
+    lb     a0, (a0)
+    beqz   a0, __task_switch
 
+    la     a0, g_active_task
+    la     a1, g_preferred_ready_task
+    lw     a2, (a1)
+    sw     a2, (a0)
+
+    ret
+
+.global cpu_intrpt_switch
 .type cpu_intrpt_switch, %function
 cpu_intrpt_switch:
-    lrw    r0, VIC_TSPDR
-    bgeni  r1, 0
-    stw    r1, (r0)
-    rts
+    la     a0, g_active_task
+    la     a1, g_preferred_ready_task
+    lw     a2, (a1)
+    sw     a2, (a0)
+
+    ret
 
 /******************************************************************************
  * Functions:
  *     void cpu_first_task_start(void);
  ******************************************************************************/
-
+.global cpu_first_task_start
 .type cpu_first_task_start, %function
 cpu_first_task_start:
-    psrclr  ie
-    jbr     __tspend_handler_nosave
+    j       __task_switch_nosave
 
 /******************************************************************************
  * Functions:
  *     void __task_switch(void);
  ******************************************************************************/
 
-.type tspend_handler, %function
-tspend_handler:
-    subi    sp, 68
-    stm     r0-r13, (sp)
-    stw     r15, (sp, 56)
-    mfcr    r0, epsr
-    stw     r0, (sp, 60)
-    mfcr    r0, epc
-    stw     r0, (sp, 64)
+.type __task_switch, %function
+__task_switch:
+    addi    sp, sp, -64
 
-    lrw     r1, g_active_task
-    ldw     r1, (r1)
-    stw     sp, (r1)
+    sw      x1, 0(sp)
+    sw      x2, 4(sp)
+    sw      x3, 8(sp)
+    sw      x4, 12(sp)
+    sw      x5, 16(sp)
+    sw      x6, 20(sp)
+    sw      x7, 24(sp)
+    sw      x8, 28(sp)
+    sw      x9, 32(sp)
+    sw      x10, 36(sp)
+    sw      x11, 40(sp)
+    sw      x12, 44(sp)
+    sw      x13, 48(sp)
+    sw      x14, 52(sp)
+    sw      x15, 56(sp)
 
-#if (RHINO_CONFIG_TASK_STACK_OVF_CHECK > 0)
-    jbsr    krhino_stack_ovf_check
-#endif
+    sw      ra, 60(sp)
 
-#if (RHINO_CONFIG_TASK_SCHED_STATS > 0)
-    jbsr    krhino_task_sched_stats_get
-#endif
+    la      a1, g_active_task
+    lw      a1, (a1)
+    sw      sp, (a1)
 
-__tspend_handler_nosave:
-    lrw     r4, g_active_task
-    lrw     r5, g_preferred_ready_task
-    ldw     r6, (r5)
-    stw     r6, (r4)
+__task_switch_nosave:
+    la      a0, g_preferred_ready_task
+    la      a1, g_active_task
+    lw      a2, (a0)
+    sw      a2, (a1)
 
-#ifdef CONFIG_STACK_GUARD
-    jbsr    csky_set_stackbound
-#endif
+    lw      sp, (a2)
 
-    ldw     sp, (r6)
+    /* Run in machine mode */
+    li      t0, MSTATUS_PRV1
+    csrs    mstatus, t0
 
-#ifdef CONFIG_STACK_GUARD
-    mfcr    r3, cr<0, 4>
-    bseti   r3, 0
-    bseti   r3, 1
-    mtcr    r3, cr<0, 4>
-#endif
+    lw      t0, 60(sp)
+    csrw    mepc, t0
 
-    ldw     r0, (sp, 64)
-    mtcr    r0, epc
-    ldw     r0, (sp, 60)
-    mtcr    r0, epsr
-    ldw     r15, (sp, 56)
-    ldm     r0-r13, (sp)
-    addi    sp, 68
-    rte
+    lw      x1, 0(sp)
+    lw      x3, 8(sp)
+    lw      x4, 12(sp)
+    lw      x5, 16(sp)
+    lw      x6, 20(sp)
+    lw      x7, 24(sp)
+    lw      x8, 28(sp)
+    lw      x9, 32(sp)
+    lw      x10, 36(sp)
+    lw      x11, 40(sp)
+    lw      x12, 44(sp)
+    lw      x13, 48(sp)
+    lw      x14, 52(sp)
+    lw      x15, 56(sp)
 
+    addi    sp, sp, 64
+    mret
+
+/******************************************************************************
+ * Functions:
+ *     void NOVIC_IRQ_Default_Handler(void);
+ * novic default irq entry
+ ******************************************************************************/
+
+.global NOVIC_IRQ_Default_Handler
+.type   NOVIC_IRQ_Default_Handler, %function
+NOVIC_IRQ_Default_Handler:
+    addi    sp, sp, 4
+    addi    sp, sp, -64
+
+    sw      x1, 0(sp)
+    sw      x2, 4(sp)
+    sw      x3, 8(sp)
+    sw      x4, 12(sp)
+    sw      x5, 16(sp)
+    sw      x6, 20(sp)
+    sw      x7, 24(sp)
+    sw      x8, 28(sp)
+    sw      x9, 32(sp)
+    sw      x10, 36(sp)
+    sw      x11, 40(sp)
+    sw      x12, 44(sp)
+    sw      x13, 48(sp)
+    sw      x14, 52(sp)
+    sw      x15, 56(sp)
+
+    csrr    t0, mepc
+    sw      t0, 60(sp)
+
+    la      a0, g_active_task
+    lw      a0, (a0)
+    sw      sp, (a0)
+
+    la      sp, g_top_irqstack
+
+//    jal     handle_m_time_interrupt //chenlf
+
+    la      a0, g_active_task
+    lw      a0, (a0)
+    lw      sp, (a0)
+
+    /* Run in machine mode */
+    li      t0, MSTATUS_PRV1
+    csrs    mstatus, t0
+
+    lw      t0, 60(sp)
+    csrw    mepc, t0
+
+    lw      x1, 0(sp)
+    lw      x3, 8(sp)
+    lw      x4, 12(sp)
+    lw      x5, 16(sp)
+    lw      x6, 20(sp)
+    lw      x7, 24(sp)
+    lw      x8, 28(sp)
+    lw      x9, 32(sp)
+    lw      x10, 36(sp)
+    lw      x11, 40(sp)
+    lw      x12, 44(sp)
+    lw      x13, 48(sp)
+    lw      x14, 52(sp)
+    lw      x15, 56(sp)
+
+    addi    sp, sp, 64
+    mret

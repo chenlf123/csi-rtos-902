@@ -24,38 +24,38 @@ static inline uint32_t getcurrentpsr(void)
 {
     uint32_t flags;
 
-     __asm__ __volatile__(
-        "mfcr   %0, psr \n"
-        :"=r"(flags)
-        :
-        :
-        );
+//     __asm__ __volatile__(
+//        "mfcr   %0, psr \n"
+//        :"=r"(flags)
+//        :
+//        :
+//        );
 
     return flags;
 }
 
 static inline void clear_psr_sp(void)
 {
-    __asm__ __volatile__ (
-        "mfcr  r0, psr \n"
-        "bclri r0, 29  \n"
-        "mtcr  r0, psr \n"
-        :
-        :
-        :"r0"
-     );
+//    __asm__ __volatile__ (
+//        "mfcr  r0, psr \n"
+//        "bclri r0, 29  \n"
+//        "mtcr  r0, psr \n"
+//        :
+//        :
+//        :"r0"
+//     );
 }
 
 static inline void set_psr_sp(void)
 {
-    __asm__ __volatile__ (
-        "mfcr  r0, psr \n"
-        "bseti r0, 29  \n"
-        "mtcr  r0, psr \n"
-        :
-        :
-        :"r0"
-     );
+//    __asm__ __volatile__ (
+//        "mfcr  r0, psr \n"
+//        "bseti r0, 29  \n"
+//        "mtcr  r0, psr \n"
+//        :
+//        :
+//        :"r0"
+//     );
 }
 
 void csky_get_tee_caller_task(void)

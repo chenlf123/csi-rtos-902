@@ -21,11 +21,10 @@ OBJDIR = $(BUILDDIR)/obj
 MAKEDIR = $(shell pwd)
 ROOTDIR = $(MAKEDIR)/../../../../../
 
+CFLAGS += -g2 -march=rv32emc -mabi=ilp32e
 CFLAGS += -g2
 CFLAGS += -Os
-CFLAGS += -mlittle-endian
 
-TARGET_CPU = ck803s
 SOC	= sl03
 BOARD = sl03_evb
 KERNEL = rhino
@@ -42,23 +41,31 @@ export TARGET_CPU SOC BOARD KERNEL HAVE_VIC
 LINKFILE = gcc_csky.ld
 LINKDIR  = $(ROOTDIR)/board/$(BOARD)
 
-ifeq ($(strip $(TARGET_CPU)),$(filter $(TARGET_CPU), ck610e ck610ef))
-CC      = csky-elf-gcc
-LD      = csky-elf-ld
-AR      = csky-elf-ar
-AS      = csky-elf-as
-GS      = csky-elf-gasp
-OBJDUMP = csky-elf-objdump
-OBJCOPY = csky-elf-objcopy
-else
-CC      = csky-abiv2-elf-gcc
-LD      = csky-abiv2-elf-ld
-AR      = csky-abiv2-elf-ar
-AS      = csky-abiv2-elf-as
-GS      = csky-abiv2-elf-gasp
-OBJDUMP = csky-abiv2-elf-objdump
-OBJCOPY = csky-abiv2-elf-objcopy
-endif
+CC      = riscv32-unknown-elf-gcc
+LD      = riscv32-unknown-elf-ld
+AR      = riscv32-unknown-elf-ar
+AS      = riscv32-unknown-elf-as
+GS      = riscv32-unknown-elf-gasp
+OBJDUMP = riscv32-unknown-elf-objdump
+OBJCOPY = riscv32-unknown-elf-objcopy
+
+#ifeq ($(strip $(TARGET_CPU)),$(filter $(TARGET_CPU), ck610e ck610ef))
+#CC      = csky-elf-gcc
+#LD      = csky-elf-ld
+#AR      = csky-elf-ar
+#AS      = csky-elf-as
+#GS      = csky-elf-gasp
+#OBJDUMP = csky-elf-objdump
+#OBJCOPY = csky-elf-objcopy
+#else
+#CC      = csky-abiv2-elf-gcc
+#LD      = csky-abiv2-elf-ld
+#AR      = csky-abiv2-elf-ar
+#AS      = csky-abiv2-elf-as
+#GS      = csky-abiv2-elf-gasp
+#OBJDUMP = csky-abiv2-elf-objdump
+#OBJCOPY = csky-abiv2-elf-objcopy
+#endif
 RM      = rm
 MV      = mv
 
@@ -115,14 +122,12 @@ SSRC += $(ROOTDIR)/csi_driver/$(SOC)/*.S
 
 include sub.mk
 
-ENDIAN = -mlittle-endian
 CFLAGS += $(INCLUDEDIRS)
 CFLAGS += -c -g -ffunction-sections -fdata-sections -Wall
-CFLAGS += -mcpu=$(TARGET_CPU)
 ifeq ($(ENDIAN),-mbig-endian)
-AFLAGS = -EB -mcpu=$(TARGET_CPU)
+AFLAGS = -EB 
 else
-AFLAGS = -EL -mcpu=$(TARGET_CPU)
+AFLAGS = -EL
 endif
 
 LDFLAGS += $(ENDIAN)
@@ -160,7 +165,7 @@ build_dir:
 
 $(NAME).elf: build_dir $(OBJECTS) $(LINKDIR)/$(LINKFILE)
 	@echo LINK $@
-	$(Q)$(CC) $(LDFLAGS) -mcpu=$(TARGET_CPU) -static \
+	$(Q)$(CC) $(LDFLAGS) -static \
 	-nostartfiles -o $(BUILDDIR)/$(NAME).elf \
 	-Wl,--whole-archive $(OBJECTS) $(DSP_LIB) -Wl,--no-whole-archive \
 	-Wl,-T$(LINKDIR)/$(LINKFILE) \

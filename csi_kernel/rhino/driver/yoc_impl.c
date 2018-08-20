@@ -75,11 +75,15 @@ void soc_intrpt_stack_ovf_check(void)
 }
 #endif
 
-uint32_t soc_get_cur_sp(void)
+size_t soc_get_cur_sp(void)
 {
     uint32_t result;
 
-    asm volatile("mov %0, sp" : "=r"(result));
+#ifdef __riscv
+    asm volatile("mv      %0, sp" : "=r"(result));
+#else
+    asm volatile("mov     %0, sp" : "=r"(result));
+#endif
     return (result);
 }
 
