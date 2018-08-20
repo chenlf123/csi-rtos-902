@@ -1,0 +1,928 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	coremark.h	/^	MATDAT *A;$/;"	m	struct:MAT_PARAMS_S
+ALL_ALGORITHMS_MASK	coremark.h	87;"	d
+APB_FREQ	core_timer_port.c	26;"	d	file:
+AR	Makefile	/^AR      = riscv32-unknown-elf-ar$/;"	m
+AS	Makefile	/^AS      = riscv32-unknown-elf-as$/;"	m
+B	coremark.h	/^	MATDAT *B;$/;"	m	struct:MAT_PARAMS_S
+BOARD	Makefile	/^BOARD = sl03_evb$/;"	m
+BUILDDIR	Makefile	/^BUILDDIR= $(CDIR)\/out$/;"	m
+C	coremark.h	/^	MATRES *C;$/;"	m	struct:MAT_PARAMS_S
+CC	Makefile	/^CC      = riscv32-unknown-elf-gcc$/;"	m
+CDIR	Makefile	/^CDIR   = .$/;"	m
+COMPILER_FLAGS	core_portme.h	69;"	d
+COMPILER_VERSION	core_portme.h	54;"	d
+COMPILER_VERSION	core_portme.h	56;"	d
+CONFIG_ARCH_INTERRUPTSTACK	configs/csi_config.h	6;"	d
+CONFIG_CHIP_SL03	configs/csi_config.h	3;"	d
+CONFIG_HAVE_VIC	configs/csi_config.h	5;"	d
+CONFIG_KERNEL_NONE	configs/csi_config.h	4;"	d
+CORETIMETYPE	core_portme.h	96;"	d
+CORE_EXPONENT	coremark.h	/^	CORE_EXPONENT,$/;"	e	enum:CORE_STATE
+CORE_FLOAT	coremark.h	/^	CORE_FLOAT,$/;"	e	enum:CORE_STATE
+CORE_INT	coremark.h	/^	CORE_INT,$/;"	e	enum:CORE_STATE
+CORE_INVALID	coremark.h	/^	CORE_INVALID,$/;"	e	enum:CORE_STATE
+CORE_PORTABLE_S	core_portme.h	/^typedef struct CORE_PORTABLE_S {$/;"	s
+CORE_PORTME_H	core_portme.h	11;"	d
+CORE_S1	coremark.h	/^	CORE_S1,$/;"	e	enum:CORE_STATE
+CORE_S2	coremark.h	/^	CORE_S2,$/;"	e	enum:CORE_STATE
+CORE_SCIENTIFIC	coremark.h	/^	CORE_SCIENTIFIC,$/;"	e	enum:CORE_STATE
+CORE_START	coremark.h	/^	CORE_START=0,$/;"	e	enum:CORE_STATE
+CORE_STATE	coremark.h	/^typedef enum CORE_STATE {$/;"	g
+CORE_SYSTIMER_H_	core_timer_port.h	23;"	d
+CORE_TICKS	core_portme.h	/^typedef ee_u32 CORE_TICKS;$/;"	t
+CORE_TICKS	out/sl03_evb.asm	/^CORE_TICKS get_time(void) {$/;"	l
+CSRC	Makefile	/^CSRC = \\$/;"	m
+CSRCFILE	Makefile	/^CSRCFILE = $(wildcard $(CSRC))$/;"	m
+DSP_LIB	Makefile	/^DSP_LIB = $(ROOTDIR)\/csi_dsp\/lib\/libcsky_CK803slf_math.a$/;"	m
+Disassembly	out/sl03_evb.asm	/^Disassembly of section .text:$/;"	l
+EE_TICKS_PER_SEC	core_portme.c	51;"	d	file:
+ENDIAN	Makefile	/^ENDIAN = $/;"	m
+EXAMPLE_DSP	Makefile	/^EXAMPLE_DSP = n$/;"	m
+GETMYTIME	core_portme.c	46;"	d	file:
+GS	Makefile	/^GS      = riscv32-unknown-elf-gasp$/;"	m
+HAS_FLOAT	core_portme.h	19;"	d
+HAS_PRINTF	core_portme.h	45;"	d
+HAS_STDIO	core_portme.h	39;"	d
+HAS_TIME_H	core_portme.h	26;"	d
+HAVE_VIC	Makefile	/^HAVE_VIC = y$/;"	m
+HELIX	Makefile	/^HELIX = n$/;"	m
+HEX_BUILDDIR	Makefile	/^HEX_BUILDDIR = $(ROOTDIR)\/utilities\/elf2hex\/hex$/;"	m
+ID_LIST	coremark.h	84;"	d
+ID_MATRIX	coremark.h	85;"	d
+ID_STATE	coremark.h	86;"	d
+INCLUDEDIRS	Makefile	/^INCLUDEDIRS = \\$/;"	m
+ITERATIONS	core_portme.c	13;"	d	file:
+KERNEL	Makefile	/^KERNEL = none$/;"	m
+LD	Makefile	/^LD      = riscv32-unknown-elf-ld$/;"	m
+LINKDIR	Makefile	/^LINKDIR  = $(ROOTDIR)\/board\/$(BOARD)$/;"	m
+LINKFILE	Makefile	/^LINKFILE = gcc_csky.ld$/;"	m
+MAIN_HAS_NOARGC	core_portme.h	156;"	d
+MAIN_HAS_NORETURN	core_portme.h	167;"	d
+MAIN_RETURN_TYPE	coremark.h	62;"	d
+MAIN_RETURN_TYPE	coremark.h	65;"	d
+MAIN_RETURN_TYPE	out/sl03_evb.asm	/^MAIN_RETURN_TYPE benchmark_coremark_main(int argc, char *argv[]) {$/;"	l
+MAIN_RETURN_TYPE	out/sl03_evb.asm	/^MAIN_RETURN_TYPE benchmark_coremark_main(void) {$/;"	l
+MAIN_RETURN_VAL	coremark.h	61;"	d
+MAIN_RETURN_VAL	coremark.h	64;"	d
+MAKEDIR	Makefile	/^MAKEDIR = $(shell pwd)$/;"	m
+MATDAT	coremark.h	/^typedef ee_f16 MATDAT;$/;"	t
+MATDAT	coremark.h	/^typedef ee_s16 MATDAT;$/;"	t
+MATDAT_INT	coremark.h	103;"	d
+MATRES	coremark.h	/^typedef ee_f32 MATRES;$/;"	t
+MATRES	coremark.h	/^typedef ee_s32 MATRES;$/;"	t
+MAT_PARAMS_S	coremark.h	/^typedef struct MAT_PARAMS_S {$/;"	s
+MEM_LOCATION	core_portme.h	65;"	d
+MEM_MALLOC	coremark.h	35;"	d
+MEM_METHOD	core_portme.h	120;"	d
+MEM_STACK	coremark.h	36;"	d
+MEM_STATIC	coremark.h	34;"	d
+MULTITHREAD	core_portme.h	139;"	d
+MV	Makefile	/^MV      = mv$/;"	m
+MYTIMEDIFF	core_portme.c	47;"	d	file:
+N	coremark.h	/^	int N;$/;"	m	struct:MAT_PARAMS_S
+NAME	Makefile	/^NAME   = sl03_evb$/;"	m
+NEXT_SYMBOL	out/sl03_evb.asm	/^		NEXT_SYMBOL = *str;$/;"	d
+NULL	core_portme.h	86;"	d
+NUM_ALGORITHMS	coremark.h	88;"	d
+NUM_CORE_STATES	coremark.h	/^	NUM_CORE_STATES$/;"	e	enum:CORE_STATE
+OBJCOPY	Makefile	/^OBJCOPY = riscv32-unknown-elf-objcopy$/;"	m
+OBJDIR	Makefile	/^OBJDIR = $(BUILDDIR)\/obj$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = riscv32-unknown-elf-objdump$/;"	m
+OBJECTS	Makefile	/^OBJECTS = $(SSRCFILE:%.S=%.o) $(CSRCFILE:%.c=%.o)$/;"	m
+PERFORMANCE_RUN	core_portme.h	187;"	d
+PROFILE_RUN	core_portme.h	185;"	d
+Q	Makefile	/^Q = @$/;"	m
+Q	Makefile	/^Q =$/;"	m
+RESULTS_S	coremark.h	/^typedef struct RESULTS_S {$/;"	s
+RM	Makefile	/^RM      = rm$/;"	m
+ROOTDIR	Makefile	/^ROOTDIR = $(MAKEDIR)\/..\/..\/..\/$/;"	m
+Reset_Handler	out/sl03_evb.asm	/^Reset_Handler:$/;"	l
+Returns	out/sl03_evb.asm	/^	Returns:$/;"	l
+SAMPLE_TIME_IMPLEMENTATION	core_portme.c	49;"	d	file:
+SEED_ARG	coremark.h	30;"	d
+SEED_FUNC	coremark.h	31;"	d
+SEED_METHOD	core_portme.h	108;"	d
+SEED_VOLATILE	coremark.h	32;"	d
+SOC	Makefile	/^SOC	= sl03$/;"	m
+SSRCFILE	Makefile	/^SSRCFILE = $(wildcard $(SSRC))$/;"	m
+SysTimer_LoopCount	core_timer_port.c	/^static unsigned int SysTimer_LoopCount = 0;$/;"	v	file:
+SystemCoreClock	out/sl03_evb.asm	/^    SystemCoreClock = SYSTEM_CLOCK;$/;"	d
+TARGET_CPU	Makefile	/^TARGET_CPU = $/;"	m
+TEST_CORE	Makefile	/^TEST_CORE = n$/;"	m
+TEST_DRIVER	Makefile	/^TEST_DRIVER = n$/;"	m
+TEST_KERNEL	Makefile	/^TEST_KERNEL = n$/;"	m
+TIMER_LOADCOUNT	core_timer_port.c	28;"	d	file:
+TIMER_LOADTIMER	core_timer_port.c	27;"	d	file:
+TIMER_RES_DIVIDER	core_portme.c	48;"	d	file:
+TOTAL_DATA_SIZE	coremark.h	27;"	d
+Timer_Close	core_timer_port.c	/^void Timer_Close()$/;"	f
+Timer_CurrentValue	core_timer_port.c	/^unsigned  long long Timer_CurrentValue()$/;"	f
+Timer_Open	core_timer_port.c	/^void Timer_Open()$/;"	f
+Timer_Start	core_timer_port.c	/^void Timer_Start()$/;"	f
+Timer_Stop	core_timer_port.c	/^void Timer_Stop()$/;"	f
+USE_CLOCK	core_portme.h	33;"	d
+USE_FORK	core_portme.h	141;"	d
+USE_PTHREAD	core_portme.h	140;"	d
+USE_SOCKET	core_portme.h	142;"	d
+VALIDATION_RUN	core_portme.h	189;"	d
+__ALWAYS_INLINE	out/sl03_evb.asm	/^__ALWAYS_INLINE void csi_vic_disable_irq(int32_t IRQn)$/;"	l
+__ALWAYS_INLINE	out/sl03_evb.asm	/^__ALWAYS_INLINE void csi_vic_enable_irq(int32_t IRQn)$/;"	l
+__CSI_CONFIG_H__	configs/csi_config.h	2;"	d
+__exit	out/sl03_evb.asm	/^__exit:$/;"	l
+a00	out/sl03_evb.asm	/^     a00:	00a2e6b3          	or	a3,t0,a0$/;"	l
+a04	out/sl03_evb.asm	/^     a04:	5579                	li	a0,-2$/;"	l
+a06	out/sl03_evb.asm	/^     a06:	c6bd                	beqz	a3,a74 <__gedf2+0xaa>$/;"	l
+a08	out/sl03_evb.asm	/^     a08:	4422                	lw	s0,8(sp)$/;"	l
+a0a	out/sl03_evb.asm	/^     a0a:	4492                	lw	s1,4(sp)$/;"	l
+a0c	out/sl03_evb.asm	/^     a0c:	0131                	addi	sp,sp,12$/;"	l
+a0e	out/sl03_evb.asm	/^     a0e:	8082                	ret$/;"	l
+a10	out/sl03_evb.asm	/^     a10:	00d71663          	bne	a4,a3,a1c <__gedf2+0x52>$/;"	l
+a14	out/sl03_evb.asm	/^     a14:	00c7e6b3          	or	a3,a5,a2$/;"	l
+a18	out/sl03_evb.asm	/^     a18:	5579                	li	a0,-2$/;"	l
+a1a	out/sl03_evb.asm	/^     a1a:	f6fd                	bnez	a3,a08 <__gedf2+0x3e>$/;"	l
+a1c	out/sl03_evb.asm	/^     a1c:	04031e63          	bnez	t1,a78 <__gedf2+0xae>$/;"	l
+a2	out/sl03_evb.asm	/^      a2:	00b701a3          	sb	a1,3(a4)$/;"	l
+a20	out/sl03_evb.asm	/^     a20:	0072e533          	or	a0,t0,t2$/;"	l
+a24	out/sl03_evb.asm	/^     a24:	00153513          	seqz	a0,a0$/;"	l
+a28	out/sl03_evb.asm	/^     a28:	e319                	bnez	a4,a2e <__gedf2+0x64>$/;"	l
+a2a	out/sl03_evb.asm	/^     a2a:	8e5d                	or	a2,a2,a5$/;"	l
+a2c	out/sl03_evb.asm	/^     a2c:	ce15                	beqz	a2,a68 <__gedf2+0x9e>$/;"	l
+a2e	out/sl03_evb.asm	/^     a2e:	e519                	bnez	a0,a3c <__gedf2+0x72>$/;"	l
+a30	out/sl03_evb.asm	/^     a30:	4682                	lw	a3,0(sp)$/;"	l
+a32	out/sl03_evb.asm	/^     a32:	00d58963          	beq	a1,a3,a44 <__gedf2+0x7a>$/;"	l
+a36	out/sl03_evb.asm	/^     a36:	4505                	li	a0,1$/;"	l
+a38	out/sl03_evb.asm	/^     a38:	d9e1                	beqz	a1,a08 <__gedf2+0x3e>$/;"	l
+a3a	out/sl03_evb.asm	/^     a3a:	a019                	j	a40 <__gedf2+0x76>$/;"	l
+a3c	out/sl03_evb.asm	/^     a3c:	4782                	lw	a5,0(sp)$/;"	l
+a3e	out/sl03_evb.asm	/^     a3e:	f7e9                	bnez	a5,a08 <__gedf2+0x3e>$/;"	l
+a40	out/sl03_evb.asm	/^     a40:	557d                	li	a0,-1$/;"	l
+a42	out/sl03_evb.asm	/^     a42:	b7d9                	j	a08 <__gedf2+0x3e>$/;"	l
+a44	out/sl03_evb.asm	/^     a44:	fe6749e3          	blt	a4,t1,a36 <__gedf2+0x6c>$/;"	l
+a48	out/sl03_evb.asm	/^     a48:	00e35663          	ble	a4,t1,a54 <__gedf2+0x8a>$/;"	l
+a4c	out/sl03_evb.asm	/^     a4c:	557d                	li	a0,-1$/;"	l
+a4e	out/sl03_evb.asm	/^     a4e:	ddcd                	beqz	a1,a08 <__gedf2+0x3e>$/;"	l
+a50	out/sl03_evb.asm	/^     a50:	4505                	li	a0,1$/;"	l
+a52	out/sl03_evb.asm	/^     a52:	bf5d                	j	a08 <__gedf2+0x3e>$/;"	l
+a54	out/sl03_evb.asm	/^     a54:	fe57e1e3          	bltu	a5,t0,a36 <__gedf2+0x6c>$/;"	l
+a58	out/sl03_evb.asm	/^     a58:	00f29b63          	bne	t0,a5,a6e <__gedf2+0xa4>$/;"	l
+a5c	out/sl03_evb.asm	/^     a5c:	fc84ede3          	bltu	s1,s0,a36 <__gedf2+0x6c>$/;"	l
+a6	out/sl03_evb.asm	/^      a6:	00b70123          	sb	a1,2(a4)$/;"	l
+a60	out/sl03_evb.asm	/^     a60:	4501                	li	a0,0$/;"	l
+a62	out/sl03_evb.asm	/^     a62:	fa9473e3          	bleu	s1,s0,a08 <__gedf2+0x3e>$/;"	l
+a66	out/sl03_evb.asm	/^     a66:	b7dd                	j	a4c <__gedf2+0x82>$/;"	l
+a68	out/sl03_evb.asm	/^     a68:	d579                	beqz	a0,a36 <__gedf2+0x6c>$/;"	l
+a6a	out/sl03_evb.asm	/^     a6a:	4501                	li	a0,0$/;"	l
+a6c	out/sl03_evb.asm	/^     a6c:	bf71                	j	a08 <__gedf2+0x3e>$/;"	l
+a6e	out/sl03_evb.asm	/^     a6e:	fcf2efe3          	bltu	t0,a5,a4c <__gedf2+0x82>$/;"	l
+a72	out/sl03_evb.asm	/^     a72:	bfe5                	j	a6a <__gedf2+0xa0>$/;"	l
+a74	out/sl03_evb.asm	/^     a74:	fa6700e3          	beq	a4,t1,a14 <__gedf2+0x4a>$/;"	l
+a78	out/sl03_evb.asm	/^     a78:	ff45                	bnez	a4,a30 <__gedf2+0x66>$/;"	l
+a7a	out/sl03_evb.asm	/^     a7a:	4501                	li	a0,0$/;"	l
+a7c	out/sl03_evb.asm	/^     a7c:	b77d                	j	a2a <__gedf2+0x60>$/;"	l
+a7e	out/sl03_evb.asm	/^     a7e:	001007b7          	lui	a5,0x100$/;"	l
+a82	out/sl03_evb.asm	/^     a82:	17fd                	addi	a5,a5,-1$/;"	l
+a84	out/sl03_evb.asm	/^     a84:	1151                	addi	sp,sp,-12$/;"	l
+a86	out/sl03_evb.asm	/^     a86:	00b7f2b3          	and	t0,a5,a1$/;"	l
+a8a	out/sl03_evb.asm	/^     a8a:	0145d313          	srli	t1,a1,0x14$/;"	l
+a8e	out/sl03_evb.asm	/^     a8e:	0146d713          	srli	a4,a3,0x14$/;"	l
+a92	out/sl03_evb.asm	/^     a92:	8ff5                	and	a5,a5,a3$/;"	l
+a94	out/sl03_evb.asm	/^     a94:	82fd                	srli	a3,a3,0x1f$/;"	l
+a96	out/sl03_evb.asm	/^     a96:	c422                	sw	s0,8(sp)$/;"	l
+a98	out/sl03_evb.asm	/^     a98:	c226                	sw	s1,4(sp)$/;"	l
+a9a	out/sl03_evb.asm	/^     a9a:	c036                	sw	a3,0(sp)$/;"	l
+a9c	out/sl03_evb.asm	/^     a9c:	7ff37313          	andi	t1,t1,2047$/;"	l
+aa	out/sl03_evb.asm	/^      aa:	00b700a3          	sb	a1,1(a4)$/;"	l
+aa0	out/sl03_evb.asm	/^     aa0:	7ff00693          	li	a3,2047$/;"	l
+aa4	out/sl03_evb.asm	/^     aa4:	83aa                	mv	t2,a0$/;"	l
+aa6	out/sl03_evb.asm	/^     aa6:	842a                	mv	s0,a0$/;"	l
+aa8	out/sl03_evb.asm	/^     aa8:	81fd                	srli	a1,a1,0x1f$/;"	l
+aaa	out/sl03_evb.asm	/^     aaa:	84b2                	mv	s1,a2$/;"	l
+aac	out/sl03_evb.asm	/^     aac:	7ff77713          	andi	a4,a4,2047$/;"	l
+ab0	out/sl03_evb.asm	/^     ab0:	00d31a63          	bne	t1,a3,ac4 <__ledf2+0x46>$/;"	l
+ab4	out/sl03_evb.asm	/^     ab4:	00a2e6b3          	or	a3,t0,a0$/;"	l
+ab8	out/sl03_evb.asm	/^     ab8:	4509                	li	a0,2$/;"	l
+aba	out/sl03_evb.asm	/^     aba:	c6bd                	beqz	a3,b28 <__ledf2+0xaa>$/;"	l
+abc	out/sl03_evb.asm	/^     abc:	4422                	lw	s0,8(sp)$/;"	l
+abe	out/sl03_evb.asm	/^     abe:	4492                	lw	s1,4(sp)$/;"	l
+ac0	out/sl03_evb.asm	/^     ac0:	0131                	addi	sp,sp,12$/;"	l
+ac2	out/sl03_evb.asm	/^     ac2:	8082                	ret$/;"	l
+ac4	out/sl03_evb.asm	/^     ac4:	00d71663          	bne	a4,a3,ad0 <__ledf2+0x52>$/;"	l
+ac8	out/sl03_evb.asm	/^     ac8:	00c7e6b3          	or	a3,a5,a2$/;"	l
+acc	out/sl03_evb.asm	/^     acc:	4509                	li	a0,2$/;"	l
+ace	out/sl03_evb.asm	/^     ace:	f6fd                	bnez	a3,abc <__ledf2+0x3e>$/;"	l
+ad0	out/sl03_evb.asm	/^     ad0:	04031e63          	bnez	t1,b2c <__ledf2+0xae>$/;"	l
+ad4	out/sl03_evb.asm	/^     ad4:	0072e533          	or	a0,t0,t2$/;"	l
+ad8	out/sl03_evb.asm	/^     ad8:	00153513          	seqz	a0,a0$/;"	l
+adc	out/sl03_evb.asm	/^     adc:	e319                	bnez	a4,ae2 <__ledf2+0x64>$/;"	l
+ade	out/sl03_evb.asm	/^     ade:	8e5d                	or	a2,a2,a5$/;"	l
+ae	out/sl03_evb.asm	/^      ae:	00b70023          	sb	a1,0(a4)$/;"	l
+ae0	out/sl03_evb.asm	/^     ae0:	ce15                	beqz	a2,b1c <__ledf2+0x9e>$/;"	l
+ae2	out/sl03_evb.asm	/^     ae2:	e519                	bnez	a0,af0 <__ledf2+0x72>$/;"	l
+ae4	out/sl03_evb.asm	/^     ae4:	4682                	lw	a3,0(sp)$/;"	l
+ae6	out/sl03_evb.asm	/^     ae6:	00d58963          	beq	a1,a3,af8 <__ledf2+0x7a>$/;"	l
+aea	out/sl03_evb.asm	/^     aea:	4505                	li	a0,1$/;"	l
+aec	out/sl03_evb.asm	/^     aec:	d9e1                	beqz	a1,abc <__ledf2+0x3e>$/;"	l
+aee	out/sl03_evb.asm	/^     aee:	a019                	j	af4 <__ledf2+0x76>$/;"	l
+af0	out/sl03_evb.asm	/^     af0:	4782                	lw	a5,0(sp)$/;"	l
+af2	out/sl03_evb.asm	/^     af2:	f7e9                	bnez	a5,abc <__ledf2+0x3e>$/;"	l
+af4	out/sl03_evb.asm	/^     af4:	557d                	li	a0,-1$/;"	l
+af6	out/sl03_evb.asm	/^     af6:	b7d9                	j	abc <__ledf2+0x3e>$/;"	l
+af8	out/sl03_evb.asm	/^     af8:	fe6749e3          	blt	a4,t1,aea <__ledf2+0x6c>$/;"	l
+afc	out/sl03_evb.asm	/^     afc:	00e35663          	ble	a4,t1,b08 <__ledf2+0x8a>$/;"	l
+align_mem	core_portme.h	90;"	d
+b00	out/sl03_evb.asm	/^     b00:	557d                	li	a0,-1$/;"	l
+b02	out/sl03_evb.asm	/^     b02:	ddcd                	beqz	a1,abc <__ledf2+0x3e>$/;"	l
+b04	out/sl03_evb.asm	/^     b04:	4505                	li	a0,1$/;"	l
+b06	out/sl03_evb.asm	/^     b06:	bf5d                	j	abc <__ledf2+0x3e>$/;"	l
+b08	out/sl03_evb.asm	/^     b08:	fe57e1e3          	bltu	a5,t0,aea <__ledf2+0x6c>$/;"	l
+b0c	out/sl03_evb.asm	/^     b0c:	00f29b63          	bne	t0,a5,b22 <__ledf2+0xa4>$/;"	l
+b10	out/sl03_evb.asm	/^     b10:	fc84ede3          	bltu	s1,s0,aea <__ledf2+0x6c>$/;"	l
+b14	out/sl03_evb.asm	/^     b14:	4501                	li	a0,0$/;"	l
+b16	out/sl03_evb.asm	/^     b16:	fa9473e3          	bleu	s1,s0,abc <__ledf2+0x3e>$/;"	l
+b1a	out/sl03_evb.asm	/^     b1a:	b7dd                	j	b00 <__ledf2+0x82>$/;"	l
+b1c	out/sl03_evb.asm	/^     b1c:	d579                	beqz	a0,aea <__ledf2+0x6c>$/;"	l
+b1e	out/sl03_evb.asm	/^     b1e:	4501                	li	a0,0$/;"	l
+b2	out/sl03_evb.asm	/^      b2:	8082                	ret$/;"	l
+b20	out/sl03_evb.asm	/^     b20:	bf71                	j	abc <__ledf2+0x3e>$/;"	l
+b22	out/sl03_evb.asm	/^     b22:	fcf2efe3          	bltu	t0,a5,b00 <__ledf2+0x82>$/;"	l
+b26	out/sl03_evb.asm	/^     b26:	bfe5                	j	b1e <__ledf2+0xa0>$/;"	l
+b28	out/sl03_evb.asm	/^     b28:	fa6700e3          	beq	a4,t1,ac8 <__ledf2+0x4a>$/;"	l
+b2c	out/sl03_evb.asm	/^     b2c:	ff45                	bnez	a4,ae4 <__ledf2+0x66>$/;"	l
+b2e	out/sl03_evb.asm	/^     b2e:	4501                	li	a0,0$/;"	l
+b30	out/sl03_evb.asm	/^     b30:	b77d                	j	ade <__ledf2+0x60>$/;"	l
+b32	out/sl03_evb.asm	/^     b32:	0145d713          	srli	a4,a1,0x14$/;"	l
+b36	out/sl03_evb.asm	/^     b36:	001006b7          	lui	a3,0x100$/;"	l
+b3a	out/sl03_evb.asm	/^     b3a:	862a                	mv	a2,a0$/;"	l
+b3c	out/sl03_evb.asm	/^     b3c:	fff68793          	addi	a5,a3,-1 # fffff <__erodata+0xf9203>$/;"	l
+b4	out/sl03_evb.asm	/^      b4:	0ff5f593          	andi	a1,a1,255$/;"	l
+b40	out/sl03_evb.asm	/^     b40:	7ff77713          	andi	a4,a4,2047$/;"	l
+b44	out/sl03_evb.asm	/^     b44:	3fe00513          	li	a0,1022$/;"	l
+b48	out/sl03_evb.asm	/^     b48:	8fed                	and	a5,a5,a1$/;"	l
+b4a	out/sl03_evb.asm	/^     b4a:	81fd                	srli	a1,a1,0x1f$/;"	l
+b4c	out/sl03_evb.asm	/^     b4c:	02e55f63          	ble	a4,a0,b8a <__fixunsdfsi+0x58>$/;"	l
+b50	out/sl03_evb.asm	/^     b50:	4501                	li	a0,0$/;"	l
+b52	out/sl03_evb.asm	/^     b52:	e591                	bnez	a1,b5e <__fixunsdfsi+0x2c>$/;"	l
+b54	out/sl03_evb.asm	/^     b54:	41e00593          	li	a1,1054$/;"	l
+b58	out/sl03_evb.asm	/^     b58:	557d                	li	a0,-1$/;"	l
+b5a	out/sl03_evb.asm	/^     b5a:	00e5d363          	ble	a4,a1,b60 <__fixunsdfsi+0x2e>$/;"	l
+b5e	out/sl03_evb.asm	/^     b5e:	8082                	ret$/;"	l
+b60	out/sl03_evb.asm	/^     b60:	8fd5                	or	a5,a5,a3$/;"	l
+b62	out/sl03_evb.asm	/^     b62:	43300693          	li	a3,1075$/;"	l
+b66	out/sl03_evb.asm	/^     b66:	8e99                	sub	a3,a3,a4$/;"	l
+b68	out/sl03_evb.asm	/^     b68:	45fd                	li	a1,31$/;"	l
+b6a	out/sl03_evb.asm	/^     b6a:	00d5ca63          	blt	a1,a3,b7e <__fixunsdfsi+0x4c>$/;"	l
+b6e	out/sl03_evb.asm	/^     b6e:	bed70513          	addi	a0,a4,-1043 # 7fbed <__erodata+0x78df1>$/;"	l
+b72	out/sl03_evb.asm	/^     b72:	00a797b3          	sll	a5,a5,a0$/;"	l
+b76	out/sl03_evb.asm	/^     b76:	00d65533          	srl	a0,a2,a3$/;"	l
+b7a	out/sl03_evb.asm	/^     b7a:	8d5d                	or	a0,a0,a5$/;"	l
+b7c	out/sl03_evb.asm	/^     b7c:	8082                	ret$/;"	l
+b7e	out/sl03_evb.asm	/^     b7e:	41300513          	li	a0,1043$/;"	l
+b8	out/sl03_evb.asm	/^      b8:	00859693          	slli	a3,a1,0x8$/;"	l
+b82	out/sl03_evb.asm	/^     b82:	8d19                	sub	a0,a0,a4$/;"	l
+b84	out/sl03_evb.asm	/^     b84:	00a7d533          	srl	a0,a5,a0$/;"	l
+b88	out/sl03_evb.asm	/^     b88:	8082                	ret$/;"	l
+b8a	out/sl03_evb.asm	/^     b8a:	4501                	li	a0,0$/;"	l
+b8c	out/sl03_evb.asm	/^     b8c:	8082                	ret$/;"	l
+b8e	out/sl03_evb.asm	/^     b8e:	1151                	addi	sp,sp,-12$/;"	l
+b90	out/sl03_evb.asm	/^     b90:	c406                	sw	ra,8(sp)$/;"	l
+b92	out/sl03_evb.asm	/^     b92:	c222                	sw	s0,4(sp)$/;"	l
+b94	out/sl03_evb.asm	/^     b94:	c131                	beqz	a0,bd8 <__floatunsidf+0x4a>$/;"	l
+b96	out/sl03_evb.asm	/^     b96:	842a                	mv	s0,a0$/;"	l
+b98	out/sl03_evb.asm	/^     b98:	20a1                	jal	be0 <__clzsi2>$/;"	l
+b9a	out/sl03_evb.asm	/^     b9a:	41e00713          	li	a4,1054$/;"	l
+b9e	out/sl03_evb.asm	/^     b9e:	47a9                	li	a5,10$/;"	l
+ba0	out/sl03_evb.asm	/^     ba0:	8f09                	sub	a4,a4,a0$/;"	l
+ba2	out/sl03_evb.asm	/^     ba2:	02a7c663          	blt	a5,a0,bce <__floatunsidf+0x40>$/;"	l
+ba6	out/sl03_evb.asm	/^     ba6:	47ad                	li	a5,11$/;"	l
+ba8	out/sl03_evb.asm	/^     ba8:	8f89                	sub	a5,a5,a0$/;"	l
+baa	out/sl03_evb.asm	/^     baa:	0555                	addi	a0,a0,21$/;"	l
+bac	out/sl03_evb.asm	/^     bac:	00f457b3          	srl	a5,s0,a5$/;"	l
+barebones_clock	core_portme.c	/^CORETIMETYPE barebones_clock() {$/;"	f
+bb0	out/sl03_evb.asm	/^     bb0:	00a41433          	sll	s0,s0,a0$/;"	l
+bb4	out/sl03_evb.asm	/^     bb4:	8522                	mv	a0,s0$/;"	l
+bb6	out/sl03_evb.asm	/^     bb6:	40a2                	lw	ra,8(sp)$/;"	l
+bb8	out/sl03_evb.asm	/^     bb8:	4412                	lw	s0,4(sp)$/;"	l
+bba	out/sl03_evb.asm	/^     bba:	07b2                	slli	a5,a5,0xc$/;"	l
+bbc	out/sl03_evb.asm	/^     bbc:	7ff77713          	andi	a4,a4,2047$/;"	l
+bc	out/sl03_evb.asm	/^      bc:	8dd5                	or	a1,a1,a3$/;"	l
+bc0	out/sl03_evb.asm	/^     bc0:	0752                	slli	a4,a4,0x14$/;"	l
+bc2	out/sl03_evb.asm	/^     bc2:	83b1                	srli	a5,a5,0xc$/;"	l
+bc4	out/sl03_evb.asm	/^     bc4:	00e7e6b3          	or	a3,a5,a4$/;"	l
+bc8	out/sl03_evb.asm	/^     bc8:	85b6                	mv	a1,a3$/;"	l
+bca	out/sl03_evb.asm	/^     bca:	0131                	addi	sp,sp,12$/;"	l
+bcc	out/sl03_evb.asm	/^     bcc:	8082                	ret$/;"	l
+bce	out/sl03_evb.asm	/^     bce:	1555                	addi	a0,a0,-11$/;"	l
+bd0	out/sl03_evb.asm	/^     bd0:	00a417b3          	sll	a5,s0,a0$/;"	l
+bd4	out/sl03_evb.asm	/^     bd4:	4401                	li	s0,0$/;"	l
+bd6	out/sl03_evb.asm	/^     bd6:	bff9                	j	bb4 <__floatunsidf+0x26>$/;"	l
+bd8	out/sl03_evb.asm	/^     bd8:	4781                	li	a5,0$/;"	l
+bda	out/sl03_evb.asm	/^     bda:	4401                	li	s0,0$/;"	l
+bdc	out/sl03_evb.asm	/^     bdc:	4701                	li	a4,0$/;"	l
+bde	out/sl03_evb.asm	/^     bde:	bfd9                	j	bb4 <__floatunsidf+0x26>$/;"	l
+be	out/sl03_evb.asm	/^      be:	01059693          	slli	a3,a1,0x10$/;"	l
+be0	out/sl03_evb.asm	/^     be0:	67c1                	lui	a5,0x10$/;"	l
+be2	out/sl03_evb.asm	/^     be2:	02f57563          	bleu	a5,a0,c0c <__clzsi2+0x2c>$/;"	l
+be6	out/sl03_evb.asm	/^     be6:	0ff00793          	li	a5,255$/;"	l
+bea	out/sl03_evb.asm	/^     bea:	00a7b7b3          	sltu	a5,a5,a0$/;"	l
+bee	out/sl03_evb.asm	/^     bee:	078e                	slli	a5,a5,0x3$/;"	l
+benchmark_coremark_main	core_main.c	/^MAIN_RETURN_TYPE benchmark_coremark_main(void) {$/;"	f
+benchmark_test	main.c	/^int benchmark_test(void)$/;"	f
+bf0	out/sl03_evb.asm	/^     bf0:	02000713          	li	a4,32$/;"	l
+bf4	out/sl03_evb.asm	/^     bf4:	8f1d                	sub	a4,a4,a5$/;"	l
+bf6	out/sl03_evb.asm	/^     bf6:	00f557b3          	srl	a5,a0,a5$/;"	l
+bfa	out/sl03_evb.asm	/^     bfa:	6519                	lui	a0,0x6$/;"	l
+bfc	out/sl03_evb.asm	/^     bfc:	6fc50513          	addi	a0,a0,1788 # 66fc <__clz_tab>$/;"	l
+bit_extract	core_matrix.c	47;"	d	file:
+c	out/sl03_evb.asm	/^       c:	00818193          	addi	gp,gp,8 # 20000010 <__data_end__>$/;"	l
+c00	out/sl03_evb.asm	/^     c00:	97aa                	add	a5,a5,a0$/;"	l
+c02	out/sl03_evb.asm	/^     c02:	0007c503          	lbu	a0,0(a5) # 10000 <__erodata+0x9204>$/;"	l
+c06	out/sl03_evb.asm	/^     c06:	40a70533          	sub	a0,a4,a0$/;"	l
+c0a	out/sl03_evb.asm	/^     c0a:	8082                	ret$/;"	l
+c0c	out/sl03_evb.asm	/^     c0c:	01000737          	lui	a4,0x1000$/;"	l
+c10	out/sl03_evb.asm	/^     c10:	47c1                	li	a5,16$/;"	l
+c12	out/sl03_evb.asm	/^     c12:	fce56fe3          	bltu	a0,a4,bf0 <__clzsi2+0x10>$/;"	l
+c16	out/sl03_evb.asm	/^     c16:	47e1                	li	a5,24$/;"	l
+c18	out/sl03_evb.asm	/^     c18:	bfe1                	j	bf0 <__clzsi2+0x10>$/;"	l
+c1a	out/sl03_evb.asm	/^     c1a:	1151                	addi	sp,sp,-12$/;"	l
+c1c	out/sl03_evb.asm	/^     c1c:	c026                	sw	s1,0(sp)$/;"	l
+c1e	out/sl03_evb.asm	/^     c1e:	84aa                	mv	s1,a0$/;"	l
+c2	out/sl03_evb.asm	/^      c2:	8dd5                	or	a1,a1,a3$/;"	l
+c20	out/sl03_evb.asm	/^     c20:	4188                	lw	a0,0(a1)$/;"	l
+c22	out/sl03_evb.asm	/^     c22:	c222                	sw	s0,4(sp)$/;"	l
+c24	out/sl03_evb.asm	/^     c24:	c406                	sw	ra,8(sp)$/;"	l
+c26	out/sl03_evb.asm	/^     c26:	842e                	mv	s0,a1$/;"	l
+c28	out/sl03_evb.asm	/^     c28:	2295                	jal	d8c <mm_size2ndx>$/;"	l
+c2a	out/sl03_evb.asm	/^     c2a:	0505                	addi	a0,a0,1$/;"	l
+c2c	out/sl03_evb.asm	/^     c2c:	00451293          	slli	t0,a0,0x4$/;"	l
+c30	out/sl03_evb.asm	/^     c30:	00548333          	add	t1,s1,t0$/;"	l
+c34	out/sl03_evb.asm	/^     c34:	01032683          	lw	a3,16(t1) # 10010 <__erodata+0x9214>$/;"	l
+c38	out/sl03_evb.asm	/^     c38:	00828793          	addi	a5,t0,8 # 80008 <__erodata+0x7920c>$/;"	l
+c3c	out/sl03_evb.asm	/^     c3c:	00f48733          	add	a4,s1,a5$/;"	l
+c4	out/sl03_evb.asm	/^      c4:	b761                	j	4c <memset+0x10>$/;"	l
+c40	out/sl03_evb.asm	/^     c40:	caa9                	beqz	a3,c92 <mm_addfreechunk+0x78>$/;"	l
+c42	out/sl03_evb.asm	/^     c42:	0006a083          	lw	ra,0(a3)$/;"	l
+c46	out/sl03_evb.asm	/^     c46:	02008963          	beqz	ra,c78 <mm_addfreechunk+0x5e>$/;"	l
+c4a	out/sl03_evb.asm	/^     c4a:	4010                	lw	a2,0(s0)$/;"	l
+c4c	out/sl03_evb.asm	/^     c4c:	00c0e963          	bltu	ra,a2,c5e <mm_addfreechunk+0x44>$/;"	l
+c50	out/sl03_evb.asm	/^     c50:	a025                	j	c78 <mm_addfreechunk+0x5e>$/;"	l
+c52	out/sl03_evb.asm	/^     c52:	0003a583          	lw	a1,0(t2)$/;"	l
+c56	out/sl03_evb.asm	/^     c56:	c19d                	beqz	a1,c7c <mm_addfreechunk+0x62>$/;"	l
+c58	out/sl03_evb.asm	/^     c58:	02c5f263          	bleu	a2,a1,c7c <mm_addfreechunk+0x62>$/;"	l
+c5c	out/sl03_evb.asm	/^     c5c:	869e                	mv	a3,t2$/;"	l
+c5e	out/sl03_evb.asm	/^     c5e:	0086a383          	lw	t2,8(a3)$/;"	l
+c6	out/sl03_evb.asm	/^      c6:	00279693          	slli	a3,a5,0x2$/;"	l
+c62	out/sl03_evb.asm	/^     c62:	fe0398e3          	bnez	t2,c52 <mm_addfreechunk+0x38>$/;"	l
+c66	out/sl03_evb.asm	/^     c66:	c680                	sw	s0,8(a3)$/;"	l
+c68	out/sl03_evb.asm	/^     c68:	c454                	sw	a3,12(s0)$/;"	l
+c6a	out/sl03_evb.asm	/^     c6a:	00042423          	sw	zero,8(s0)$/;"	l
+c6e	out/sl03_evb.asm	/^     c6e:	40a2                	lw	ra,8(sp)$/;"	l
+c70	out/sl03_evb.asm	/^     c70:	4412                	lw	s0,4(sp)$/;"	l
+c72	out/sl03_evb.asm	/^     c72:	4482                	lw	s1,0(sp)$/;"	l
+c74	out/sl03_evb.asm	/^     c74:	0131                	addi	sp,sp,12$/;"	l
+c76	out/sl03_evb.asm	/^     c76:	8082                	ret$/;"	l
+c78	out/sl03_evb.asm	/^     c78:	83b6                	mv	t2,a3$/;"	l
+c7a	out/sl03_evb.asm	/^     c7a:	86ba                	mv	a3,a4$/;"	l
+c7c	out/sl03_evb.asm	/^     c7c:	c680                	sw	s0,8(a3)$/;"	l
+c7e	out/sl03_evb.asm	/^     c7e:	c454                	sw	a3,12(s0)$/;"	l
+c80	out/sl03_evb.asm	/^     c80:	00742423          	sw	t2,8(s0)$/;"	l
+c84	out/sl03_evb.asm	/^     c84:	0083a623          	sw	s0,12(t2)$/;"	l
+c88	out/sl03_evb.asm	/^     c88:	40a2                	lw	ra,8(sp)$/;"	l
+c8a	out/sl03_evb.asm	/^     c8a:	4412                	lw	s0,4(sp)$/;"	l
+c8c	out/sl03_evb.asm	/^     c8c:	4482                	lw	s1,0(sp)$/;"	l
+c8e	out/sl03_evb.asm	/^     c8e:	0131                	addi	sp,sp,12$/;"	l
+c90	out/sl03_evb.asm	/^     c90:	8082                	ret$/;"	l
+c92	out/sl03_evb.asm	/^     c92:	86ba                	mv	a3,a4$/;"	l
+c94	out/sl03_evb.asm	/^     c94:	bfc9                	j	c66 <mm_addfreechunk+0x4c>$/;"	l
+c96	out/sl03_evb.asm	/^     c96:	20001537          	lui	a0,0x20001$/;"	l
+c9a	out/sl03_evb.asm	/^     c9a:	1151                	addi	sp,sp,-12$/;"	l
+c9c	out/sl03_evb.asm	/^     c9c:	13000613          	li	a2,304$/;"	l
+ca	out/sl03_evb.asm	/^      ca:	00000297          	auipc	t0,0x0$/;"	l
+ca0	out/sl03_evb.asm	/^     ca0:	4581                	li	a1,0$/;"	l
+ca2	out/sl03_evb.asm	/^     ca2:	0d850513          	addi	a0,a0,216 # 200010d8 <g_mmheap+0x18>$/;"	l
+ca6	out/sl03_evb.asm	/^     ca6:	c406                	sw	ra,8(sp)$/;"	l
+ca8	out/sl03_evb.asm	/^     ca8:	b94ff0ef          	jal	ra,3c <memset>$/;"	l
+cac	out/sl03_evb.asm	/^     cac:	200013b7          	lui	t2,0x20001$/;"	l
+calc_func	core_list_join.c	/^ee_s16 calc_func(ee_s16 *pdata, core_results *res) {$/;"	f
+cb0	out/sl03_evb.asm	/^     cb0:	200017b7          	lui	a5,0x20001$/;"	l
+cb4	out/sl03_evb.asm	/^     cb4:	0c038613          	addi	a2,t2,192 # 200010c0 <g_mmheap>$/;"	l
+cb8	out/sl03_evb.asm	/^     cb8:	0e878793          	addi	a5,a5,232 # 200010e8 <g_mmheap+0x28>$/;"	l
+cbc	out/sl03_evb.asm	/^     cbc:	14860593          	addi	a1,a2,328$/;"	l
+cc0	out/sl03_evb.asm	/^     cc0:	ff078713          	addi	a4,a5,-16$/;"	l
+cc4	out/sl03_evb.asm	/^     cc4:	c7d8                	sw	a4,12(a5)$/;"	l
+cc6	out/sl03_evb.asm	/^     cc6:	fef7ac23          	sw	a5,-8(a5)$/;"	l
+cca	out/sl03_evb.asm	/^     cca:	01078093          	addi	ra,a5,16$/;"	l
+cce	out/sl03_evb.asm	/^     cce:	fe10ac23          	sw	ra,-8(ra)$/;"	l
+cd2	out/sl03_evb.asm	/^     cd2:	00f0a623          	sw	a5,12(ra)$/;"	l
+cd6	out/sl03_evb.asm	/^     cd6:	02078693          	addi	a3,a5,32$/;"	l
+cda	out/sl03_evb.asm	/^     cda:	fed6ac23          	sw	a3,-8(a3)$/;"	l
+cde	out/sl03_evb.asm	/^     cde:	0016a623          	sw	ra,12(a3)$/;"	l
+ce	out/sl03_evb.asm	/^      ce:	9696                	add	a3,a3,t0$/;"	l
+ce2	out/sl03_evb.asm	/^     ce2:	03078293          	addi	t0,a5,48$/;"	l
+ce6	out/sl03_evb.asm	/^     ce6:	00d2a623          	sw	a3,12(t0)$/;"	l
+cea	out/sl03_evb.asm	/^     cea:	fe52ac23          	sw	t0,-8(t0)$/;"	l
+cee	out/sl03_evb.asm	/^     cee:	04078313          	addi	t1,a5,64$/;"	l
+cf2	out/sl03_evb.asm	/^     cf2:	fe632c23          	sw	t1,-8(t1)$/;"	l
+cf6	out/sl03_evb.asm	/^     cf6:	00532623          	sw	t0,12(t1)$/;"	l
+cfa	out/sl03_evb.asm	/^     cfa:	05078513          	addi	a0,a5,80$/;"	l
+cfe	out/sl03_evb.asm	/^     cfe:	fea52c23          	sw	a0,-8(a0)$/;"	l
+ch	out/sl03_evb.asm	/^          ch = (unsigned char)va_arg(ap, int);$/;"	d
+check_data_types	core_util.c	/^ee_u8 check_data_types() {$/;"	f
+clock_gettime	core_timer_port.c	/^unsigned long long  clock_gettime()$/;"	f
+cmp_complex	core_list_join.c	/^ee_s32 cmp_complex(list_data *a, list_data *b, core_results *res) {$/;"	f
+cmp_idx	core_list_join.c	/^ee_s32 cmp_idx(list_data *a, list_data *b, core_results *res) {$/;"	f
+console_handle	out/sl03_evb.asm	/^    console_handle = csi_usart_initialize(CONSOLE_IDX, NULL);$/;"	d
+copy_info	core_list_join.c	/^void copy_info(list_data *to,list_data *from) {$/;"	f
+core_bench_list	core_list_join.c	/^ee_u16 core_bench_list(core_results *res, ee_s16 finder_idx) {$/;"	f
+core_bench_matrix	core_matrix.c	/^ee_u16 core_bench_matrix(mat_params *p, ee_s16 seed, ee_u16 crc) {$/;"	f
+core_bench_state	core_state.c	/^ee_u16 core_bench_state(ee_u32 blksize, ee_u8 *memblock,$/;"	f
+core_init_matrix	core_matrix.c	/^ee_u32 core_init_matrix(ee_u32 blksize, void *memblk, ee_s32 seed, mat_params *p) {$/;"	f
+core_init_state	core_state.c	/^void core_init_state(ee_u32 size, ee_s16 seed, ee_u8 *p) {$/;"	f
+core_list_find	core_list_join.c	/^list_head *core_list_find(list_head *list,list_data *info) {$/;"	f
+core_list_init	core_list_join.c	/^list_head *core_list_init(ee_u32 blksize, list_head *memblock, ee_s16 seed) {$/;"	f
+core_list_insert_new	core_list_join.c	/^list_head *core_list_insert_new(list_head *insert_point, list_data *info, list_head **memblock, list_data **datablock$/;"	f
+core_list_mergesort	core_list_join.c	/^list_head *core_list_mergesort(list_head *list, list_cmp cmp, core_results *res) {$/;"	f
+core_list_remove	core_list_join.c	/^list_head *core_list_remove(list_head *item) {$/;"	f
+core_list_reverse	core_list_join.c	/^list_head *core_list_reverse(list_head *list) {$/;"	f
+core_list_undo_remove	core_list_join.c	/^list_head *core_list_undo_remove(list_head *item_removed, list_head *item_modified) {$/;"	f
+core_portable	core_portme.h	/^} core_portable;$/;"	t	typeref:struct:CORE_PORTABLE_S
+core_results	coremark.h	/^} core_results;$/;"	t	typeref:struct:RESULTS_S
+core_state_e	coremark.h	/^} core_state_e ;$/;"	t	typeref:enum:CORE_STATE
+core_state_transition	core_state.c	/^enum CORE_STATE core_state_transition( ee_u8 **instr , ee_u32 *transition_count) {$/;"	f
+crc	coremark.h	/^	ee_u16	crc;$/;"	m	struct:RESULTS_S
+crc16	core_util.c	/^ee_u16 crc16(ee_s16 newval, ee_u16 crc) {$/;"	f
+crclist	coremark.h	/^	ee_u16	crclist;$/;"	m	struct:RESULTS_S
+crcmatrix	coremark.h	/^	ee_u16	crcmatrix;$/;"	m	struct:RESULTS_S
+crcstate	coremark.h	/^	ee_u16	crcstate;$/;"	m	struct:RESULTS_S
+crcu16	core_util.c	/^ee_u16 crcu16(ee_u16 newval, ee_u16 crc) {$/;"	f
+crcu32	core_util.c	/^ee_u16 crcu32(ee_u32 newval, ee_u16 crc) {$/;"	f
+crcu8	core_util.c	/^ee_u16 crcu8(ee_u8 data, ee_u16 crc )$/;"	f
+d0	out/sl03_evb.asm	/^      d0:	8286                	mv	t0,ra$/;"	l
+d02	out/sl03_evb.asm	/^     d02:	00652623          	sw	t1,12(a0)$/;"	l
+d06	out/sl03_evb.asm	/^     d06:	06078093          	addi	ra,a5,96$/;"	l
+d0a	out/sl03_evb.asm	/^     d0a:	fe10ac23          	sw	ra,-8(ra)$/;"	l
+d0e	out/sl03_evb.asm	/^     d0e:	00a0a623          	sw	a0,12(ra)$/;"	l
+d12	out/sl03_evb.asm	/^     d12:	07078713          	addi	a4,a5,112$/;"	l
+d16	out/sl03_evb.asm	/^     d16:	08078693          	addi	a3,a5,128$/;"	l
+d1a	out/sl03_evb.asm	/^     d1a:	fee72c23          	sw	a4,-8(a4) # fffff8 <__erodata+0xff91fc>$/;"	l
+d1e	out/sl03_evb.asm	/^     d1e:	00172623          	sw	ra,12(a4)$/;"	l
+d2	out/sl03_evb.asm	/^      d2:	fa8680e7          	jalr	-88(a3)$/;"	l
+d22	out/sl03_evb.asm	/^     d22:	fed6ac23          	sw	a3,-8(a3)$/;"	l
+d26	out/sl03_evb.asm	/^     d26:	c6d8                	sw	a4,12(a3)$/;"	l
+d28	out/sl03_evb.asm	/^     d28:	09078793          	addi	a5,a5,144$/;"	l
+d2c	out/sl03_evb.asm	/^     d2c:	f8f59ae3          	bne	a1,a5,cc0 <mm_heap_initialize+0x2a>$/;"	l
+d30	out/sl03_evb.asm	/^     d30:	200015b7          	lui	a1,0x20001$/;"	l
+d34	out/sl03_evb.asm	/^     d34:	20858293          	addi	t0,a1,520 # 20001208 <__bss_end__>$/;"	l
+d38	out/sl03_evb.asm	/^     d38:	200800b7          	lui	ra,0x20080$/;"	l
+d3c	out/sl03_evb.asm	/^     d3c:	00f28313          	addi	t1,t0,15$/;"	l
+d40	out/sl03_evb.asm	/^     d40:	00008713          	mv	a4,ra$/;"	l
+d44	out/sl03_evb.asm	/^     d44:	ff037513          	andi	a0,t1,-16$/;"	l
+d48	out/sl03_evb.asm	/^     d48:	ff077693          	andi	a3,a4,-16$/;"	l
+d4c	out/sl03_evb.asm	/^     d4c:	40a687b3          	sub	a5,a3,a0$/;"	l
+d50	out/sl03_evb.asm	/^     d50:	ca08                	sw	a0,16(a2)$/;"	l
+d52	out/sl03_evb.asm	/^     d52:	c65c                	sw	a5,12(a2)$/;"	l
+d54	out/sl03_evb.asm	/^     d54:	4321                	li	t1,8$/;"	l
+d56	out/sl03_evb.asm	/^     d56:	ff078093          	addi	ra,a5,-16$/;"	l
+d5a	out/sl03_evb.asm	/^     d5a:	800002b7          	lui	t0,0x80000$/;"	l
+d5e	out/sl03_evb.asm	/^     d5e:	00152423          	sw	ra,8(a0)$/;"	l
+d6	out/sl03_evb.asm	/^      d6:	8096                	mv	ra,t0$/;"	l
+d62	out/sl03_evb.asm	/^     d62:	00652023          	sw	t1,0(a0)$/;"	l
+d66	out/sl03_evb.asm	/^     d66:	00552223          	sw	t0,4(a0)$/;"	l
+d6a	out/sl03_evb.asm	/^     d6a:	00850593          	addi	a1,a0,8$/;"	l
+d6e	out/sl03_evb.asm	/^     d6e:	0065a223          	sw	t1,4(a1)$/;"	l
+d72	out/sl03_evb.asm	/^     d72:	ff868513          	addi	a0,a3,-8$/;"	l
+d76	out/sl03_evb.asm	/^     d76:	ca48                	sw	a0,20(a2)$/;"	l
+d78	out/sl03_evb.asm	/^     d78:	fe66ac23          	sw	t1,-8(a3)$/;"	l
+d7c	out/sl03_evb.asm	/^     d7c:	0050e633          	or	a2,ra,t0$/;"	l
+d8	out/sl03_evb.asm	/^      d8:	17c1                	addi	a5,a5,-16$/;"	l
+d80	out/sl03_evb.asm	/^     d80:	40a2                	lw	ra,8(sp)$/;"	l
+d82	out/sl03_evb.asm	/^     d82:	c150                	sw	a2,4(a0)$/;"	l
+d84	out/sl03_evb.asm	/^     d84:	0c038513          	addi	a0,t2,192$/;"	l
+d88	out/sl03_evb.asm	/^     d88:	0131                	addi	sp,sp,12$/;"	l
+d8a	out/sl03_evb.asm	/^     d8a:	bd41                	j	c1a <mm_addfreechunk>$/;"	l
+d8c	out/sl03_evb.asm	/^     d8c:	004007b7          	lui	a5,0x400$/;"	l
+d90	out/sl03_evb.asm	/^     d90:	06f57863          	bleu	a5,a0,e00 <mm_size2ndx+0x74>$/;"	l
+d94	out/sl03_evb.asm	/^     d94:	00455793          	srli	a5,a0,0x4$/;"	l
+d98	out/sl03_evb.asm	/^     d98:	4705                	li	a4,1$/;"	l
+d9a	out/sl03_evb.asm	/^     d9a:	4501                	li	a0,0$/;"	l
+d9c	out/sl03_evb.asm	/^     d9c:	06f77163          	bleu	a5,a4,dfe <mm_size2ndx+0x72>$/;"	l
+da	out/sl03_evb.asm	/^      da:	8f1d                	sub	a4,a4,a5$/;"	l
+da0	out/sl03_evb.asm	/^     da0:	0505                	addi	a0,a0,1$/;"	l
+da2	out/sl03_evb.asm	/^     da2:	0017d613          	srli	a2,a5,0x1$/;"	l
+da6	out/sl03_evb.asm	/^     da6:	86aa                	mv	a3,a0$/;"	l
+da8	out/sl03_evb.asm	/^     da8:	04e60e63          	beq	a2,a4,e04 <mm_size2ndx+0x78>$/;"	l
+dac	out/sl03_evb.asm	/^     dac:	0027d293          	srli	t0,a5,0x2$/;"	l
+data16	coremark.h	/^	ee_s16 data16;$/;"	m	struct:list_data_s
+db0	out/sl03_evb.asm	/^     db0:	0505                	addi	a0,a0,1$/;"	l
+db2	out/sl03_evb.asm	/^     db2:	04e28663          	beq	t0,a4,dfe <mm_size2ndx+0x72>$/;"	l
+db6	out/sl03_evb.asm	/^     db6:	0037d313          	srli	t1,a5,0x3$/;"	l
+dba	out/sl03_evb.asm	/^     dba:	00268513          	addi	a0,a3,2$/;"	l
+dbe	out/sl03_evb.asm	/^     dbe:	04e30063          	beq	t1,a4,dfe <mm_size2ndx+0x72>$/;"	l
+dc	out/sl03_evb.asm	/^      dc:	963e                	add	a2,a2,a5$/;"	l
+dc2	out/sl03_evb.asm	/^     dc2:	0047d393          	srli	t2,a5,0x4$/;"	l
+dc6	out/sl03_evb.asm	/^     dc6:	00368513          	addi	a0,a3,3$/;"	l
+dca	out/sl03_evb.asm	/^     dca:	02e38a63          	beq	t2,a4,dfe <mm_size2ndx+0x72>$/;"	l
+dce	out/sl03_evb.asm	/^     dce:	0057d593          	srli	a1,a5,0x5$/;"	l
+dd2	out/sl03_evb.asm	/^     dd2:	00468513          	addi	a0,a3,4$/;"	l
+dd6	out/sl03_evb.asm	/^     dd6:	02e58463          	beq	a1,a4,dfe <mm_size2ndx+0x72>$/;"	l
+dda	out/sl03_evb.asm	/^     dda:	0067d613          	srli	a2,a5,0x6$/;"	l
+dde	out/sl03_evb.asm	/^     dde:	00568513          	addi	a0,a3,5$/;"	l
+de	out/sl03_evb.asm	/^      de:	f8c374e3          	bleu	a2,t1,66 <memset+0x2a>$/;"	l
+de2	out/sl03_evb.asm	/^     de2:	00e60e63          	beq	a2,a4,dfe <mm_size2ndx+0x72>$/;"	l
+de6	out/sl03_evb.asm	/^     de6:	0077d293          	srli	t0,a5,0x7$/;"	l
+dea	out/sl03_evb.asm	/^     dea:	00668513          	addi	a0,a3,6$/;"	l
+dee	out/sl03_evb.asm	/^     dee:	00e28863          	beq	t0,a4,dfe <mm_size2ndx+0x72>$/;"	l
+default	out/sl03_evb.asm	/^			default:$/;"	l
+default	out/sl03_evb.asm	/^		default:$/;"	l
+default	out/sl03_evb.asm	/^        default:$/;"	l
+default	out/sl03_evb.asm	/^       default:  $/;"	l
+default_num_contexts	core_portme.c	/^ee_u32 default_num_contexts=1;$/;"	v
+df2	out/sl03_evb.asm	/^     df2:	83a1                	srli	a5,a5,0x8$/;"	l
+df4	out/sl03_evb.asm	/^     df4:	00768513          	addi	a0,a3,7$/;"	l
+df8	out/sl03_evb.asm	/^     df8:	fae794e3          	bne	a5,a4,da0 <mm_size2ndx+0x14>$/;"	l
+dfc	out/sl03_evb.asm	/^     dfc:	8082                	ret$/;"	l
+dfe	out/sl03_evb.asm	/^     dfe:	8082                	ret$/;"	l
+divisor	out/sl03_evb.asm	/^        divisor = (divisor \/ 10) + 1;$/;"	d
+e	out/sl03_evb.asm	/^				    e = p; p = p->next; psize--;$/;"	d
+e	out/sl03_evb.asm	/^				    e = q; q = q->next; qsize--;$/;"	d
+e00	out/sl03_evb.asm	/^     e00:	4549                	li	a0,18$/;"	l
+e02	out/sl03_evb.asm	/^     e02:	8082                	ret$/;"	l
+e04	out/sl03_evb.asm	/^     e04:	8082                	ret$/;"	l
+e06	out/sl03_evb.asm	/^     e06:	1151                	addi	sp,sp,-12$/;"	l
+e08	out/sl03_evb.asm	/^     e08:	c026                	sw	s1,0(sp)$/;"	l
+e0a	out/sl03_evb.asm	/^     e0a:	200004b7          	lui	s1,0x20000$/;"	l
+e0e	out/sl03_evb.asm	/^     e0e:	01048493          	addi	s1,s1,16 # 20000010 <__data_end__>$/;"	l
+e12	out/sl03_evb.asm	/^     e12:	c222                	sw	s0,4(sp)$/;"	l
+e14	out/sl03_evb.asm	/^     e14:	842a                	mv	s0,a0$/;"	l
+e16	out/sl03_evb.asm	/^     e16:	4088                	lw	a0,0(s1)$/;"	l
+e18	out/sl03_evb.asm	/^     e18:	c406                	sw	ra,8(sp)$/;"	l
+e1a	out/sl03_evb.asm	/^     e1a:	c10d                	beqz	a0,e3c <fputc+0x36>$/;"	l
+e1c	out/sl03_evb.asm	/^     e1c:	47a9                	li	a5,10$/;"	l
+e1e	out/sl03_evb.asm	/^     e1e:	00f40b63          	beq	s0,a5,e34 <fputc+0x2e>$/;"	l
+e2	out/sl03_evb.asm	/^      e2:	b7a5                	j	4a <memset+0xe>$/;"	l
+e22	out/sl03_evb.asm	/^     e22:	0ff47593          	andi	a1,s0,255$/;"	l
+e26	out/sl03_evb.asm	/^     e26:	2829                	jal	e40 <csi_usart_putchar>$/;"	l
+e28	out/sl03_evb.asm	/^     e28:	4501                	li	a0,0$/;"	l
+e2a	out/sl03_evb.asm	/^     e2a:	40a2                	lw	ra,8(sp)$/;"	l
+e2c	out/sl03_evb.asm	/^     e2c:	4412                	lw	s0,4(sp)$/;"	l
+e2e	out/sl03_evb.asm	/^     e2e:	4482                	lw	s1,0(sp)$/;"	l
+e30	out/sl03_evb.asm	/^     e30:	0131                	addi	sp,sp,12$/;"	l
+e32	out/sl03_evb.asm	/^     e32:	8082                	ret$/;"	l
+e34	out/sl03_evb.asm	/^     e34:	45b5                	li	a1,13$/;"	l
+e36	out/sl03_evb.asm	/^     e36:	2029                	jal	e40 <csi_usart_putchar>$/;"	l
+e38	out/sl03_evb.asm	/^     e38:	4088                	lw	a0,0(s1)$/;"	l
+e3a	out/sl03_evb.asm	/^     e3a:	b7e5                	j	e22 <fputc+0x1c>$/;"	l
+e3c	out/sl03_evb.asm	/^     e3c:	557d                	li	a0,-1$/;"	l
+e3e	out/sl03_evb.asm	/^     e3e:	b7f5                	j	e2a <fputc+0x24>$/;"	l
+e4	out/sl03_evb.asm	/^      e4:	1161                	addi	sp,sp,-8$/;"	l
+e40	out/sl03_evb.asm	/^     e40:	cd21                	beqz	a0,e98 <csi_usart_putchar+0x58>$/;"	l
+e42	out/sl03_evb.asm	/^     e42:	411c                	lw	a5,0(a0)$/;"	l
+e44	out/sl03_evb.asm	/^     e44:	4bd8                	lw	a4,20(a5)$/;"	l
+e46	out/sl03_evb.asm	/^     e46:	02077293          	andi	t0,a4,32$/;"	l
+e4a	out/sl03_evb.asm	/^     e4a:	04029463          	bnez	t0,e92 <csi_usart_putchar+0x52>$/;"	l
+e4e	out/sl03_evb.asm	/^     e4e:	0147a303          	lw	t1,20(a5) # 400014 <__erodata+0x3f9218>$/;"	l
+e52	out/sl03_evb.asm	/^     e52:	02037393          	andi	t2,t1,32$/;"	l
+e56	out/sl03_evb.asm	/^     e56:	02039e63          	bnez	t2,e92 <csi_usart_putchar+0x52>$/;"	l
+e5a	out/sl03_evb.asm	/^     e5a:	4bc8                	lw	a0,20(a5)$/;"	l
+e5c	out/sl03_evb.asm	/^     e5c:	02057613          	andi	a2,a0,32$/;"	l
+e6	out/sl03_evb.asm	/^      e6:	c222                	sw	s0,4(sp)$/;"	l
+e60	out/sl03_evb.asm	/^     e60:	ea0d                	bnez	a2,e92 <csi_usart_putchar+0x52>$/;"	l
+e62	out/sl03_evb.asm	/^     e62:	4bd4                	lw	a3,20(a5)$/;"	l
+e64	out/sl03_evb.asm	/^     e64:	0206f713          	andi	a4,a3,32$/;"	l
+e68	out/sl03_evb.asm	/^     e68:	e70d                	bnez	a4,e92 <csi_usart_putchar+0x52>$/;"	l
+e6a	out/sl03_evb.asm	/^     e6a:	0147a283          	lw	t0,20(a5)$/;"	l
+e6e	out/sl03_evb.asm	/^     e6e:	0202f313          	andi	t1,t0,32$/;"	l
+e72	out/sl03_evb.asm	/^     e72:	02031063          	bnez	t1,e92 <csi_usart_putchar+0x52>$/;"	l
+e76	out/sl03_evb.asm	/^     e76:	0147a383          	lw	t2,20(a5)$/;"	l
+e7a	out/sl03_evb.asm	/^     e7a:	0203f513          	andi	a0,t2,32$/;"	l
+e7e	out/sl03_evb.asm	/^     e7e:	e911                	bnez	a0,e92 <csi_usart_putchar+0x52>$/;"	l
+e8	out/sl03_evb.asm	/^      e8:	c026                	sw	s1,0(sp)$/;"	l
+e80	out/sl03_evb.asm	/^     e80:	4bd0                	lw	a2,20(a5)$/;"	l
+e82	out/sl03_evb.asm	/^     e82:	02067693          	andi	a3,a2,32$/;"	l
+e86	out/sl03_evb.asm	/^     e86:	e691                	bnez	a3,e92 <csi_usart_putchar+0x52>$/;"	l
+e88	out/sl03_evb.asm	/^     e88:	4bd8                	lw	a4,20(a5)$/;"	l
+e8a	out/sl03_evb.asm	/^     e8a:	02077293          	andi	t0,a4,32$/;"	l
+e8e	out/sl03_evb.asm	/^     e8e:	fa028be3          	beqz	t0,e44 <csi_usart_putchar+0x4>$/;"	l
+e92	out/sl03_evb.asm	/^     e92:	c38c                	sw	a1,0(a5)$/;"	l
+e94	out/sl03_evb.asm	/^     e94:	4501                	li	a0,0$/;"	l
+e96	out/sl03_evb.asm	/^     e96:	8082                	ret$/;"	l
+e98	out/sl03_evb.asm	/^     e98:	810205b7          	lui	a1,0x81020$/;"	l
+e9c	out/sl03_evb.asm	/^     e9c:	08458513          	addi	a0,a1,132 # 81020084 <__heap_end+0x60fa0084>$/;"	l
+ea	out/sl03_evb.asm	/^      ea:	87ae                	mv	a5,a1$/;"	l
+ea0	out/sl03_evb.asm	/^     ea0:	8082                	ret$/;"	l
+ea2	out/sl03_evb.asm	/^     ea2:	1131                	addi	sp,sp,-20$/;"	l
+ea4	out/sl03_evb.asm	/^     ea4:	c622                	sw	s0,12(sp)$/;"	l
+ea6	out/sl03_evb.asm	/^     ea6:	0050                	addi	a2,sp,4$/;"	l
+ea8	out/sl03_evb.asm	/^     ea8:	842e                	mv	s0,a1$/;"	l
+eaa	out/sl03_evb.asm	/^     eaa:	858a                	mv	a1,sp$/;"	l
+eac	out/sl03_evb.asm	/^     eac:	c426                	sw	s1,8(sp)$/;"	l
+eae	out/sl03_evb.asm	/^     eae:	c806                	sw	ra,16(sp)$/;"	l
+eb0	out/sl03_evb.asm	/^     eb0:	84aa                	mv	s1,a0$/;"	l
+eb2	out/sl03_evb.asm	/^     eb2:	c002                	sw	zero,0(sp)$/;"	l
+eb4	out/sl03_evb.asm	/^     eb4:	c202                	sw	zero,4(sp)$/;"	l
+eb6	out/sl03_evb.asm	/^     eb6:	2ecd                	jal	12a8 <target_usart_init>$/;"	l
+eb8	out/sl03_evb.asm	/^     eb8:	e139                	bnez	a0,efe <csi_usart_initialize+0x5c>$/;"	l
+eba	out/sl03_evb.asm	/^     eba:	00349513          	slli	a0,s1,0x3$/;"	l
+ebe	out/sl03_evb.asm	/^     ebe:	4382                	lw	t2,0(sp)$/;"	l
+ec	out/sl03_evb.asm	/^      ec:	20069c63          	bnez	a3,304 <__min_heap_size+0x104>$/;"	l
+ec0	out/sl03_evb.asm	/^     ec0:	4712                	lw	a4,4(sp)$/;"	l
+ec2	out/sl03_evb.asm	/^     ec2:	409500b3          	sub	ra,a0,s1$/;"	l
+ec6	out/sl03_evb.asm	/^     ec6:	200012b7          	lui	t0,0x20001$/;"	l
+eca	out/sl03_evb.asm	/^     eca:	00309793          	slli	a5,ra,0x3$/;"	l
+ece	out/sl03_evb.asm	/^     ece:	03828313          	addi	t1,t0,56 # 20001038 <g_top_irqstack>$/;"	l
+ed2	out/sl03_evb.asm	/^     ed2:	00f30533          	add	a0,t1,a5$/;"	l
+ed6	out/sl03_evb.asm	/^     ed6:	c500                	sw	s0,8(a0)$/;"	l
+ed8	out/sl03_evb.asm	/^     ed8:	d944                	sw	s1,52(a0)$/;"	l
+eda	out/sl03_evb.asm	/^     eda:	00752023          	sw	t2,0(a0)$/;"	l
+ede	out/sl03_evb.asm	/^     ede:	c158                	sw	a4,4(a0)$/;"	l
+ee0	out/sl03_evb.asm	/^     ee0:	40c2                	lw	ra,16(sp)$/;"	l
+ee2	out/sl03_evb.asm	/^     ee2:	4432                	lw	s0,12(sp)$/;"	l
+ee4	out/sl03_evb.asm	/^     ee4:	4695                	li	a3,5$/;"	l
+ee6	out/sl03_evb.asm	/^     ee6:	4585                	li	a1,1$/;"	l
+ee8	out/sl03_evb.asm	/^     ee8:	00d3a223          	sw	a3,4(t2)$/;"	l
+ee_f32	core_portme.h	/^typedef double ee_f32;$/;"	t
+ee_isdigit	core_state.c	/^static ee_u8 ee_isdigit(ee_u8 c) {$/;"	f	file:
+ee_printf	coremark.h	44;"	d
+ee_ptr_int	core_portme.h	/^typedef ee_u32 ee_ptr_int;$/;"	t
+ee_s16	core_portme.h	/^typedef signed short ee_s16;$/;"	t
+ee_s16	out/sl03_evb.asm	/^ee_s16 matrix_test(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B, MATDAT val) {$/;"	l
+ee_s32	core_portme.h	/^typedef signed int ee_s32;$/;"	t
+ee_size_t	core_portme.h	/^typedef size_t ee_size_t;$/;"	t
+ee_u16	core_portme.h	/^typedef unsigned short ee_u16;$/;"	t
+ee_u16	out/sl03_evb.asm	/^ee_u16 core_bench_list(core_results *res, ee_s16 finder_idx) {$/;"	l
+ee_u16	out/sl03_evb.asm	/^ee_u16 core_bench_matrix(mat_params *p, ee_s16 seed, ee_u16 crc) {$/;"	l
+ee_u16	out/sl03_evb.asm	/^ee_u16 core_bench_state(ee_u32 blksize, ee_u8 *memblock,$/;"	l
+ee_u16	out/sl03_evb.asm	/^ee_u16 crc16(ee_s16 newval, ee_u16 crc) {$/;"	l
+ee_u16	out/sl03_evb.asm	/^ee_u16 crcu16(ee_u16 newval, ee_u16 crc) {$/;"	l
+ee_u32	core_portme.h	/^typedef unsigned int ee_u32;$/;"	t
+ee_u32	out/sl03_evb.asm	/^ee_u32 core_init_matrix(ee_u32 blksize, void *memblk, ee_s32 seed, mat_params *p) {$/;"	l
+ee_u8	core_portme.h	/^typedef unsigned char ee_u8;$/;"	t
+eec	out/sl03_evb.asm	/^     eec:	e000e4b7          	lui	s1,0xe000e$/;"	l
+ef0	out/sl03_evb.asm	/^     ef0:	00e59633          	sll	a2,a1,a4$/;"	l
+ef4	out/sl03_evb.asm	/^     ef4:	10c4a023          	sw	a2,256(s1) # e000e100 <__heap_end+0xbff8e100>$/;"	l
+ef8	out/sl03_evb.asm	/^     ef8:	44a2                	lw	s1,8(sp)$/;"	l
+efa	out/sl03_evb.asm	/^     efa:	0151                	addi	sp,sp,20$/;"	l
+efc	out/sl03_evb.asm	/^     efc:	8082                	ret$/;"	l
+efe	out/sl03_evb.asm	/^     efe:	40c2                	lw	ra,16(sp)$/;"	l
+err	coremark.h	/^	ee_s16	err;$/;"	m	struct:RESULTS_S
+errpat	core_state.c	/^static ee_u8 *errpat[4]  ={(ee_u8 *)"T0.3e-1F",(ee_u8 *)"-T.T++Tq",(ee_u8 *)"1T3.4e4z",(ee_u8 *)"34.0e-T^"};$/;"	v	file:
+execs	coremark.h	/^	ee_u32	execs;		\/* Bitmask of operations to execute *\/$/;"	m	struct:RESULTS_S
+extern	out/sl03_evb.asm	/^extern usart_handle_t console_handle;$/;"	l
+extern	out/sl03_evb.asm	/^extern void ioreuse_initial(void);$/;"	l
+f0	out/sl03_evb.asm	/^      f0:	83b6                	mv	t2,a3$/;"	l
+f00	out/sl03_evb.asm	/^     f00:	4432                	lw	s0,12(sp)$/;"	l
+f02	out/sl03_evb.asm	/^     f02:	44a2                	lw	s1,8(sp)$/;"	l
+f04	out/sl03_evb.asm	/^     f04:	4501                	li	a0,0$/;"	l
+f06	out/sl03_evb.asm	/^     f06:	0151                	addi	sp,sp,20$/;"	l
+f08	out/sl03_evb.asm	/^     f08:	8082                	ret$/;"	l
+f0a	out/sl03_evb.asm	/^     f0a:	38050a63          	beqz	a0,129e <csi_usart_config+0x394>$/;"	l
+f0e	out/sl03_evb.asm	/^     f0e:	4108                	lw	a0,0(a0)$/;"	l
+f10	out/sl03_evb.asm	/^     f10:	1171                	addi	sp,sp,-4$/;"	l
+f12	out/sl03_evb.asm	/^     f12:	c022                	sw	s0,0(sp)$/;"	l
+f14	out/sl03_evb.asm	/^     f14:	07c52303          	lw	t1,124(a0)$/;"	l
+f18	out/sl03_evb.asm	/^     f18:	00137293          	andi	t0,t1,1$/;"	l
+f1c	out/sl03_evb.asm	/^     f1c:	06028f63          	beqz	t0,f9a <csi_usart_config+0x90>$/;"	l
+f2	out/sl03_evb.asm	/^      f2:	6699                	lui	a3,0x6$/;"	l
+f20	out/sl03_evb.asm	/^     f20:	000f43b7          	lui	t2,0xf4$/;"	l
+f24	out/sl03_evb.asm	/^     f24:	4301                	li	t1,0$/;"	l
+f26	out/sl03_evb.asm	/^     f26:	24038393          	addi	t2,t2,576 # f4240 <__erodata+0xed444>$/;"	l
+f2a	out/sl03_evb.asm	/^     f2a:	5d60                	lw	s0,124(a0)$/;"	l
+f2c	out/sl03_evb.asm	/^     f2c:	0305                	addi	t1,t1,1$/;"	l
+f2e	out/sl03_evb.asm	/^     f2e:	829a                	mv	t0,t1$/;"	l
+f30	out/sl03_evb.asm	/^     f30:	8805                	andi	s0,s0,1$/;"	l
+f32	out/sl03_evb.asm	/^     f32:	cc31                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f34	out/sl03_evb.asm	/^     f34:	5d60                	lw	s0,124(a0)$/;"	l
+f36	out/sl03_evb.asm	/^     f36:	0305                	addi	t1,t1,1$/;"	l
+f38	out/sl03_evb.asm	/^     f38:	8805                	andi	s0,s0,1$/;"	l
+f3a	out/sl03_evb.asm	/^     f3a:	c831                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f3c	out/sl03_evb.asm	/^     f3c:	5d60                	lw	s0,124(a0)$/;"	l
+f3e	out/sl03_evb.asm	/^     f3e:	00228313          	addi	t1,t0,2$/;"	l
+f4	out/sl03_evb.asm	/^      f4:	8332                	mv	t1,a2$/;"	l
+f42	out/sl03_evb.asm	/^     f42:	8805                	andi	s0,s0,1$/;"	l
+f44	out/sl03_evb.asm	/^     f44:	c429                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f46	out/sl03_evb.asm	/^     f46:	5d60                	lw	s0,124(a0)$/;"	l
+f48	out/sl03_evb.asm	/^     f48:	00328313          	addi	t1,t0,3$/;"	l
+f4c	out/sl03_evb.asm	/^     f4c:	8805                	andi	s0,s0,1$/;"	l
+f4e	out/sl03_evb.asm	/^     f4e:	c021                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f50	out/sl03_evb.asm	/^     f50:	5d60                	lw	s0,124(a0)$/;"	l
+f52	out/sl03_evb.asm	/^     f52:	00428313          	addi	t1,t0,4$/;"	l
+f56	out/sl03_evb.asm	/^     f56:	8805                	andi	s0,s0,1$/;"	l
+f58	out/sl03_evb.asm	/^     f58:	c81d                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f5a	out/sl03_evb.asm	/^     f5a:	5d60                	lw	s0,124(a0)$/;"	l
+f5c	out/sl03_evb.asm	/^     f5c:	00528313          	addi	t1,t0,5$/;"	l
+f6	out/sl03_evb.asm	/^      f6:	82aa                	mv	t0,a0$/;"	l
+f60	out/sl03_evb.asm	/^     f60:	8805                	andi	s0,s0,1$/;"	l
+f62	out/sl03_evb.asm	/^     f62:	c415                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f64	out/sl03_evb.asm	/^     f64:	5d60                	lw	s0,124(a0)$/;"	l
+f66	out/sl03_evb.asm	/^     f66:	00628313          	addi	t1,t0,6$/;"	l
+f6a	out/sl03_evb.asm	/^     f6a:	8805                	andi	s0,s0,1$/;"	l
+f6c	out/sl03_evb.asm	/^     f6c:	c00d                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f6e	out/sl03_evb.asm	/^     f6e:	00728313          	addi	t1,t0,7$/;"	l
+f72	out/sl03_evb.asm	/^     f72:	07c52283          	lw	t0,124(a0)$/;"	l
+f76	out/sl03_evb.asm	/^     f76:	0012f413          	andi	s0,t0,1$/;"	l
+f7a	out/sl03_evb.asm	/^     f7a:	c811                	beqz	s0,f8e <csi_usart_config+0x84>$/;"	l
+f7c	out/sl03_evb.asm	/^     f7c:	fa7317e3          	bne	t1,t2,f2a <csi_usart_config+0x20>$/;"	l
+f8	out/sl03_evb.asm	/^      f8:	6fc68693          	addi	a3,a3,1788 # 66fc <__clz_tab>$/;"	l
+f80	out/sl03_evb.asm	/^     f80:	4402                	lw	s0,0(sp)$/;"	l
+f82	out/sl03_evb.asm	/^     f82:	810206b7          	lui	a3,0x81020$/;"	l
+f86	out/sl03_evb.asm	/^     f86:	08268513          	addi	a0,a3,130 # 81020082 <__heap_end+0x60fa0082>$/;"	l
+f8a	out/sl03_evb.asm	/^     f8a:	0111                	addi	sp,sp,4$/;"	l
+f8c	out/sl03_evb.asm	/^     f8c:	8082                	ret$/;"	l
+f8e	out/sl03_evb.asm	/^     f8e:	000f43b7          	lui	t2,0xf4$/;"	l
+f92	out/sl03_evb.asm	/^     f92:	24038293          	addi	t0,t2,576 # f4240 <__erodata+0xed444>$/;"	l
+f96	out/sl03_evb.asm	/^     f96:	fe5305e3          	beq	t1,t0,f80 <csi_usart_config+0x76>$/;"	l
+f9a	out/sl03_evb.asm	/^     f9a:	0bebc337          	lui	t1,0xbebc$/;"	l
+f9e	out/sl03_evb.asm	/^     f9e:	20030413          	addi	s0,t1,512 # bebc200 <__erodata+0xbeb5404>$/;"	l
+fa2	out/sl03_evb.asm	/^     fa2:	02b455b3          	divu	a1,s0,a1$/;"	l
+fa6	out/sl03_evb.asm	/^     fa6:	42a9                	li	t0,10$/;"	l
+fa8	out/sl03_evb.asm	/^     fa8:	0045d393          	srli	t2,a1,0x4$/;"	l
+fac	out/sl03_evb.asm	/^     fac:	0253f433          	remu	s0,t2,t0$/;"	l
+fb0	out/sl03_evb.asm	/^     fb0:	4591                	li	a1,4$/;"	l
+fb2	out/sl03_evb.asm	/^     fb2:	0253d333          	divu	t1,t2,t0$/;"	l
+fb6	out/sl03_evb.asm	/^     fb6:	0085b3b3          	sltu	t2,a1,s0$/;"	l
+fba	out/sl03_evb.asm	/^     fba:	007302b3          	add	t0,t1,t2$/;"	l
+fbe	out/sl03_evb.asm	/^     fbe:	00c52303          	lw	t1,12(a0)$/;"	l
+fc	out/sl03_evb.asm	/^      fc:	0ac5fd63          	bleu	a2,a1,1b6 <__udivdi3+0xd2>$/;"	l
+fc2	out/sl03_evb.asm	/^     fc2:	0ff2f593          	andi	a1,t0,255$/;"	l
+fc6	out/sl03_evb.asm	/^     fc6:	0082d393          	srli	t2,t0,0x8$/;"	l
+fca	out/sl03_evb.asm	/^     fca:	08036413          	ori	s0,t1,128$/;"	l
+fce	out/sl03_evb.asm	/^     fce:	c540                	sw	s0,12(a0)$/;"	l
+fd0	out/sl03_evb.asm	/^     fd0:	c10c                	sw	a1,0(a0)$/;"	l
+fd2	out/sl03_evb.asm	/^     fd2:	0ff3f293          	andi	t0,t2,255$/;"	l
+fd6	out/sl03_evb.asm	/^     fd6:	00552223          	sw	t0,4(a0)$/;"	l
+fda	out/sl03_evb.asm	/^     fda:	00c52303          	lw	t1,12(a0)$/;"	l
+fde	out/sl03_evb.asm	/^     fde:	f7f37413          	andi	s0,t1,-129$/;"	l
+fe2	out/sl03_evb.asm	/^     fe2:	c540                	sw	s0,12(a0)$/;"	l
+fe4	out/sl03_evb.asm	/^     fe4:	2a061863          	bnez	a2,1294 <csi_usart_config+0x38a>$/;"	l
+fe8	out/sl03_evb.asm	/^     fe8:	5d6c                	lw	a1,124(a0)$/;"	l
+fea	out/sl03_evb.asm	/^     fea:	0015f393          	andi	t2,a1,1$/;"	l
+fee	out/sl03_evb.asm	/^     fee:	08038e63          	beqz	t2,108a <csi_usart_config+0x180>$/;"	l
+ff2	out/sl03_evb.asm	/^     ff2:	000f42b7          	lui	t0,0xf4$/;"	l
+ff6	out/sl03_evb.asm	/^     ff6:	4601                	li	a2,0$/;"	l
+ff8	out/sl03_evb.asm	/^     ff8:	24028413          	addi	s0,t0,576 # f4240 <__erodata+0xed444>$/;"	l
+ffc	out/sl03_evb.asm	/^     ffc:	07c52303          	lw	t1,124(a0)$/;"	l
+floatpat	core_state.c	/^static ee_u8 *floatpat[4]={(ee_u8 *)"35.54400",(ee_u8 *)".1234500",(ee_u8 *)"-110.700",(ee_u8 *)"+0.64400"};$/;"	v	file:
+get_seed	core_main.c	62;"	d	file:
+get_seed	core_main.c	66;"	d	file:
+get_seed_32	core_main.c	63;"	d	file:
+get_seed_32	core_util.c	/^	ee_s32 get_seed_32(int i) {$/;"	f
+get_seed_32	core_util.c	/^ee_s32 get_seed_32(int i) {$/;"	f
+get_seed_args	core_util.c	/^ee_s32 get_seed_args(int i, int argc, char *argv[]) {$/;"	f
+get_time	core_portme.c	/^CORE_TICKS get_time(void) {$/;"	f
+getchar	printf.c	/^int getchar(void)$/;"	f
+heapbase	out/sl03_evb.asm	/^  heapbase = MM_ALIGN_UP((uintptr_t)heapstart);$/;"	d
+heapend	out/sl03_evb.asm	/^  heapend  = MM_ALIGN_DOWN((uintptr_t)heapstart + (uintptr_t)heapsize);$/;"	d
+heapsize	out/sl03_evb.asm	/^  heapsize = heapend - heapbase;$/;"	d
+idx	coremark.h	/^	ee_s16 idx;$/;"	m	struct:list_data_s
+info	coremark.h	/^	struct list_data_s *info;$/;"	m	struct:list_head_s	typeref:struct:list_head_s::list_data_s
+insize	out/sl03_evb.asm	/^    insize = 1;$/;"	d
+int	out/sl03_evb.asm	/^int fputc(int ch, FILE *stream)$/;"	l
+int	out/sl03_evb.asm	/^int main(void)$/;"	l
+int	out/sl03_evb.asm	/^int mm_size2ndx(size_t size)$/;"	l
+int	out/sl03_evb.asm	/^int printf ( const char *fmt, ... )$/;"	l
+int	out/sl03_evb.asm	/^int putchar(int ch)$/;"	l
+int	out/sl03_evb.asm	/^int puts(const char *ptr)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_timer_config(timer_handle_t handle, timer_mode_e mode)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_timer_get_current_value(timer_handle_t handle, uint32_t *value)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_timer_set_timeout(timer_handle_t handle, uint32_t timeout)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_timer_start(timer_handle_t handle)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_timer_stop(timer_handle_t handle)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_timer_uninitialize(timer_handle_t handle)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t csi_usart_putchar(usart_handle_t handle, uint8_t ch)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t target_get_timer(int32_t idx, uint32_t *base, uint32_t *irq)$/;"	l
+int32_t	out/sl03_evb.asm	/^int32_t target_usart_init(int32_t idx, uint32_t *base, uint32_t *irq)$/;"	l
+intpat	core_state.c	/^static ee_u8 *intpat[4]  ={(ee_u8 *)"5012",(ee_u8 *)"1234",(ee_u8 *)"-874",(ee_u8 *)"+122"};$/;"	v	file:
+iterate	core_main.c	/^void *iterate(void *pres) {$/;"	f
+iterations	coremark.h	/^	ee_u32 iterations;		\/* Number of iterations to execute *\/$/;"	m	struct:RESULTS_S
+list	coremark.h	/^	struct list_head_s *list;$/;"	m	struct:RESULTS_S	typeref:struct:RESULTS_S::list_head_s
+list	out/sl03_evb.asm	/^				    list = e;$/;"	d
+list	out/sl03_evb.asm	/^        list = NULL;$/;"	d
+list_cmp	core_list_join.c	/^typedef ee_s32(*list_cmp)(list_data *a, list_data *b, core_results *res);$/;"	t	file:
+list_data	coremark.h	/^} list_data;$/;"	t	typeref:struct:list_data_s
+list_data_s	coremark.h	/^typedef struct list_data_s {$/;"	s
+list_head	coremark.h	/^} list_head;$/;"	t	typeref:struct:list_head_s
+list_head	out/sl03_evb.asm	/^list_head *core_list_find(list_head *list,list_data *info) {$/;"	l
+list_head	out/sl03_evb.asm	/^list_head *core_list_init(ee_u32 blksize, list_head *memblock, ee_s16 seed) {$/;"	l
+list_head	out/sl03_evb.asm	/^list_head *core_list_mergesort(list_head *list, list_cmp cmp, core_results *res) {$/;"	l
+list_head	out/sl03_evb.asm	/^list_head *core_list_reverse(list_head *list) {$/;"	l
+list_head_s	coremark.h	/^typedef struct list_head_s {$/;"	s
+list_known_crc	core_main.c	/^static ee_u16 list_known_crc[]   =      {(ee_u16)0xd4b0,(ee_u16)0x3340,(ee_u16)0x6a79,(ee_u16)0xe714,(ee_u16)0xe3c1};$/;"	v	file:
+load	out/sl03_evb.asm	/^        load = (uint32_t)(((timer_priv->timeout) * LSP_DEFAULT_FREQ) \/ 1000000);$/;"	d
+load	out/sl03_evb.asm	/^        load = (uint32_t)(timer_priv->timeout * min_us);$/;"	d
+main	main.c	/^int main(void)$/;"	f
+mat	coremark.h	/^	mat_params mat;$/;"	m	struct:RESULTS_S
+mat_params	coremark.h	/^} mat_params;$/;"	t	typeref:struct:MAT_PARAMS_S
+matrix_add_const	core_matrix.c	/^void matrix_add_const(ee_u32 N, MATDAT *A, MATDAT val) {$/;"	f
+matrix_big	core_matrix.c	46;"	d	file:
+matrix_clip	core_matrix.c	45;"	d	file:
+matrix_known_crc	core_main.c	/^static ee_u16 matrix_known_crc[] =      {(ee_u16)0xbe52,(ee_u16)0x1199,(ee_u16)0x5608,(ee_u16)0x1fd7,(ee_u16)0x0747};$/;"	v	file:
+matrix_mul_const	core_matrix.c	/^void matrix_mul_const(ee_u32 N, MATRES *C, MATDAT *A, MATDAT val) {$/;"	f
+matrix_mul_matrix	core_matrix.c	/^void matrix_mul_matrix(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B) {$/;"	f
+matrix_mul_matrix_bitextract	core_matrix.c	/^void matrix_mul_matrix_bitextract(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B) {$/;"	f
+matrix_mul_vect	core_matrix.c	/^void matrix_mul_vect(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B) {$/;"	f
+matrix_sum	core_matrix.c	/^ee_s16 matrix_sum(ee_u32 N, MATRES *C, MATDAT clipval) {$/;"	f
+matrix_test	core_matrix.c	/^ee_s16 matrix_test(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B, MATDAT val) {$/;"	f
+matrix_test_next	core_matrix.c	44;"	d	file:
+mem_name	core_main.c	/^char *mem_name[3] = {"Static","Heap","Stack"};$/;"	v
+memblock	coremark.h	/^	void	*memblock[4];	\/* Pointer to safe memory location *\/$/;"	m	struct:RESULTS_S
+next	coremark.h	/^	struct list_head_s *next;$/;"	m	struct:list_head_s	typeref:struct:list_head_s::list_head_s
+nmerges	out/sl03_evb.asm	/^        nmerges = 0;  \/* count number of merges we do in this pass *\/$/;"	d
+node	out/sl03_evb.asm	/^  node                        = (struct mm_freenode_s *)(heapbase + SIZEOF_MM_ALLOCNODE);$/;"	d
+numtostring	printf.c	/^static char *numtostring (unsigned int uq, int base, char *buf )$/;"	f	file:
+p	out/sl03_evb.asm	/^			p = q;$/;"	d
+p	out/sl03_evb.asm	/^        p = list;$/;"	d
+p0	out/sl03_evb.asm	/^  p0 = ++buf;$/;"	d
+parseval	core_util.c	/^ee_s32 parseval(char *valstring) {$/;"	f
+pbuf	out/sl03_evb.asm	/^         pbuf = numtostring((unsigned int)value, 10, buf);$/;"	d
+pbuf	out/sl03_evb.asm	/^         pbuf = numtostring((unsigned int)value, 16, buf);$/;"	d
+port	coremark.h	/^	core_portable port;$/;"	m	struct:RESULTS_S
+portable_fini	core_portme.c	/^void portable_fini(core_portable *p)$/;"	f
+portable_id	core_portme.h	/^	ee_u8	portable_id;$/;"	m	struct:CORE_PORTABLE_S
+portable_init	core_portme.c	/^void portable_init(core_portable *p, int *argc, char *argv[])$/;"	f
+prev	out/sl03_evb.asm	/^       prev = next, next = next->flink);$/;"	d
+printf	printf.c	/^int printf ( const char *fmt, ... )$/;"	f
+printmat	core_matrix.c	/^void printmat(MATDAT *A, ee_u32 N, char *name) {$/;"	f
+printmatC	core_matrix.c	/^void printmatC(MATRES *C, ee_u32 N, char *name) {$/;"	f
+psize	out/sl03_evb.asm	/^            psize = 0;$/;"	d
+ptr	out/sl03_evb.asm	/^         ptr = (unsigned) va_arg(ap, void *); $/;"	d
+putchar	printf.c	/^int putchar(int ch)$/;"	f
+puts	printf.c	/^int puts(const char *ptr)$/;"	f
+puts_without_enter	printf.c	/^static int puts_without_enter(const char *ptr)$/;"	f	file:
+q	out/sl03_evb.asm	/^			    q = q->next;$/;"	d
+q	out/sl03_evb.asm	/^            q = p;$/;"	d
+ret	out/sl03_evb.asm	/^    ret = benchmark_test();$/;"	d
+return	out/sl03_evb.asm	/^return fputc(ch, 0);$/;"	l
+retval	out/sl03_evb.asm	/^	retval = ((c>='0') & (c<='9')) ? 1 : 0;$/;"	d
+s	out/sl03_evb.asm	/^        s = va_arg(ap, const char *);$/;"	d
+scipat	core_state.c	/^static ee_u8 *scipat[4]  ={(ee_u8 *)"5.500e+3",(ee_u8 *)"-.123e-2",(ee_u8 *)"-87e+832",(ee_u8 *)"+0.6e-12"};$/;"	v	file:
+secs_ret	coremark.h	/^typedef double secs_ret;$/;"	t
+secs_ret	coremark.h	/^typedef ee_u32 secs_ret;$/;"	t
+secs_ret	out/sl03_evb.asm	/^secs_ret time_in_secs(CORE_TICKS ticks) {$/;"	l
+seed	out/sl03_evb.asm	/^			seed = ( ( order * seed ) % 65536 );$/;"	d
+seed1	coremark.h	/^	ee_s16	seed1;		\/* Initializing seed *\/$/;"	m	struct:RESULTS_S
+seed1_volatile	core_portme.c	/^	volatile ee_s32 seed1_volatile=0x0;$/;"	v
+seed1_volatile	core_portme.c	/^	volatile ee_s32 seed1_volatile=0x3415;$/;"	v
+seed1_volatile	core_portme.c	/^	volatile ee_s32 seed1_volatile=0x8;$/;"	v
+seed2	coremark.h	/^	ee_s16	seed2;		\/* Initializing seed *\/$/;"	m	struct:RESULTS_S
+seed2_volatile	core_portme.c	/^	volatile ee_s32 seed2_volatile=0x0;$/;"	v
+seed2_volatile	core_portme.c	/^	volatile ee_s32 seed2_volatile=0x3415;$/;"	v
+seed2_volatile	core_portme.c	/^	volatile ee_s32 seed2_volatile=0x8;$/;"	v
+seed3	coremark.h	/^	ee_s16	seed3;		\/* Initializing seed *\/$/;"	m	struct:RESULTS_S
+seed3_volatile	core_portme.c	/^	volatile ee_s32 seed3_volatile=0x66;$/;"	v
+seed3_volatile	core_portme.c	/^	volatile ee_s32 seed3_volatile=0x8;$/;"	v
+seed4_volatile	core_portme.c	/^	volatile ee_s32 seed4_volatile=ITERATIONS;$/;"	v
+seed5_volatile	core_portme.c	/^	volatile ee_s32 seed5_volatile=0;$/;"	v
+size	coremark.h	/^	ee_u32	size;		\/* Size of the data *\/$/;"	m	struct:RESULTS_S
+size_t	core_portme.h	/^typedef unsigned int size_t;$/;"	t
+start_time	core_portme.c	/^void start_time(void) {$/;"	f
+start_time_val	core_portme.c	/^static CORETIMETYPE start_time_val, stop_time_val;$/;"	v	file:
+state	out/sl03_evb.asm	/^				state = CORE_EXPONENT;$/;"	d
+state	out/sl03_evb.asm	/^				state = CORE_FLOAT;$/;"	d
+state	out/sl03_evb.asm	/^				state = CORE_INT;$/;"	d
+state	out/sl03_evb.asm	/^				state = CORE_INVALID;$/;"	d
+state	out/sl03_evb.asm	/^				state = CORE_S1;$/;"	d
+state	out/sl03_evb.asm	/^				state = CORE_S2;$/;"	d
+state	out/sl03_evb.asm	/^				state = CORE_SCIENTIFIC;$/;"	d
+state_known_crc	core_main.c	/^static ee_u16 state_known_crc[]  =      {(ee_u16)0x5e47,(ee_u16)0x39bf,(ee_u16)0xe5a4,(ee_u16)0x8e3a,(ee_u16)0x8d84};$/;"	v	file:
+static	out/sl03_evb.asm	/^static void timer_cb_fun(int32_t idx, timer_event_e event)$/;"	l
+static_memblk	core_main.c	/^ee_u8 static_memblk[TOTAL_DATA_SIZE];$/;"	v
+stop_time	core_portme.c	/^void stop_time(void) {$/;"	f
+stop_time_val	core_portme.c	/^static CORETIMETYPE start_time_val, stop_time_val;$/;"	v	file:
+systimer_us	out/sl03_evb.asm	/^    systimer_us  = systimer_val * 1000000\/ APB_FREQ;$/;"	d
+systimer_val	out/sl03_evb.asm	/^    systimer_val = Timer_CurrentValue();$/;"	d
+tail	out/sl03_evb.asm	/^        tail = NULL;$/;"	d
+time	core_timer_port.c	/^ long time()$/;"	f
+time_in_secs	core_portme.c	/^secs_ret time_in_secs(CORE_TICKS ticks) {$/;"	f
+timer_cb_fun	core_timer_port.c	/^static void timer_cb_fun(int32_t idx, timer_event_e event)$/;"	f	file:
+timer_handle	core_timer_port.c	/^static timer_handle_t timer_handle;$/;"	v	file:
+timer_handle	out/sl03_evb.asm	/^    timer_handle = csi_timer_initialize(0, timer_cb_fun);$/;"	d
+timer_handle_t	out/sl03_evb.asm	/^timer_handle_t csi_timer_initialize(int32_t idx, timer_event_cb_t cb_event)$/;"	l
+unsigned	out/sl03_evb.asm	/^unsigned long long  clock_gettime()$/;"	l
+usart_handle_t	out/sl03_evb.asm	/^usart_handle_t console_handle = NULL;$/;"	l
+usart_handle_t	out/sl03_evb.asm	/^usart_handle_t csi_usart_initialize(int32_t idx, usart_event_cb_t cb_event)$/;"	l
+val	out/sl03_evb.asm	/^			val =  (val + order);$/;"	d
+val	out/sl03_evb.asm	/^			val = (seed + order);$/;"	d
+value	out/sl03_evb.asm	/^            value = 0 - value;$/;"	d
+value	out/sl03_evb.asm	/^         value = va_arg(ap, int);$/;"	d
+value	out/sl03_evb.asm	/^         value = va_arg(ap,int);$/;"	d
+void	out/sl03_evb.asm	/^void Timer_Close()$/;"	l
+void	out/sl03_evb.asm	/^void Timer_Open()$/;"	l
+void	out/sl03_evb.asm	/^void Timer_Start()$/;"	l
+void	out/sl03_evb.asm	/^void Timer_Stop()$/;"	l
+void	out/sl03_evb.asm	/^void board_init(void)$/;"	l
+void	out/sl03_evb.asm	/^void core_init_state(ee_u32 size, ee_s16 seed, ee_u8 *p) {$/;"	l
+void	out/sl03_evb.asm	/^void matrix_add_const(ee_u32 N, MATDAT *A, MATDAT val) {$/;"	l
+void	out/sl03_evb.asm	/^void matrix_mul_matrix(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B) {$/;"	l
+void	out/sl03_evb.asm	/^void matrix_mul_matrix_bitextract(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B) {$/;"	l
+void	out/sl03_evb.asm	/^void matrix_mul_vect(ee_u32 N, MATRES *C, MATDAT *A, MATDAT *B) {$/;"	l
+void	out/sl03_evb.asm	/^void mm_addfreechunk(struct mm_heap_s *heap, struct mm_freenode_s *node)$/;"	l
+void	out/sl03_evb.asm	/^void mm_heap_initialize(void)$/;"	l
+void	out/sl03_evb.asm	/^void portable_fini(core_portable *p)$/;"	l
+void	out/sl03_evb.asm	/^void start_time(void) {$/;"	l
+void	out/sl03_evb.asm	/^void stop_time(void) {$/;"	l
+x16	out/sl03_evb.asm	/^		x16 = (ee_u8)((data & 1) ^ ((ee_u8)crc & 1));$/;"	d

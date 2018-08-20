@@ -1,0 +1,6 @@
+!.gitignore
+tools/mkconfig
+Out
+include/config.h
+.config.old
+tools/output/
