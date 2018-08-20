@@ -23,7 +23,7 @@ ROOTDIR = $(MAKEDIR)/../../../../../
 
 CFLAGS += -g2 -march=rv32emc -mabi=ilp32e
 CFLAGS += -g2
-CFLAGS += -Os
+CFLAGS += -O2
 
 SOC	= sl03
 BOARD = sl03_evb
