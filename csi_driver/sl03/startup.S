@@ -105,11 +105,16 @@ _start:
     .globl   Reset_Handler
     .type    Reset_Handler, %function
 Reset_Handler:
-#    lrw      r0, 0x80000000
-#    mtcr     r0, psr
+//    li       a0, 0
+//    csrw     mstatus, a0
+
+    li       a0, 0x800
+    csrw     mie, a0
+
+    la       a0, trap
+    csrw     mtvec, a0
 
     la       x2, g_top_irqstack
-#    mov      sp, a1
 
 /*
  *  The ranges of copy from/to are specified by following symbols

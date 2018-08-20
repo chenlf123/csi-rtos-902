@@ -52,47 +52,15 @@ g_trap_sp:
     .global trap
     .type   trap, %function
 trap:
-     j   trap
-#    psrset  ee
-#
-#    subi    sp, 4
-#    stw     r13, (sp)
-#    addi    sp, 4
-#
-#    lrw     r13, g_trap_sp
-#    stw     sp, (r13)
-#
-#    lrw     sp, g_top_trapstack
-#
-#    mov     r0, r0
-#    subi    sp, 72
-#    stm     r0-r12, (sp)
-#
-#    lrw     r0, g_trap_sp
-#    ldw     r0, (r0)
-#
-#    subi    r0, 4
-#    ldw     r13, (r0)
-#
-#    stw     r13, (sp, 52)
-#
-#    stw     r0, (sp, 56)
-#    stw     r15, (sp, 60)
-#    mfcr    r0, epsr
-#    stw     r0, (sp, 64)
-#    mfcr    r0, epc
-#    stw     r0, (sp, 68)
-#
-#    mov     r0, sp
-#
-#    /* for backtrace */
-#    subi    sp, 8
-#    stw     r8, (sp, 0)
-#    stw     r15, (sp, 4)
-#    mov     r8, sp
-#
-#    lrw     r1, trap_c
-#    jmp     r1
+    /* Check for interrupt */
+    addi    sp, sp, -4
+    sw      t0, 0x0(sp)
+    csrr    t0, mcause
+    blt     t0,x0,NOVIC_IRQ_Default_Handler
+1:
+    csrr    t1, mepc
+    j       1b
+
 
 
     .align  1

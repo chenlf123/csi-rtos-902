@@ -116,7 +116,7 @@ __task_switch_nosave:
 
     /* Run in machine mode */
     li      t0, MSTATUS_PRV1
-    csrs    mstatus, t0
+    csrw    mstatus, t0
 
     lw      t0, 60(sp)
     csrw    mepc, t0
@@ -176,7 +176,15 @@ NOVIC_IRQ_Default_Handler:
 
     la      sp, g_top_irqstack
 
-//    jal     handle_m_time_interrupt //chenlf
+    csrr    a0, mcause
+    srai    a0, a0, 4
+    andi    a0, a0, 15
+    slli    a0, a0, 2
+
+    la      a1, g_irqvector
+    add     a1, a1, a0
+    lw      a2, (a1)
+    jr      a2
 
     la      a0, g_active_task
     lw      a0, (a0)
@@ -184,7 +192,7 @@ NOVIC_IRQ_Default_Handler:
 
     /* Run in machine mode */
     li      t0, MSTATUS_PRV1
-    csrs    mstatus, t0
+    csrw    mstatus, t0
 
     lw      t0, 60(sp)
     csrw    mepc, t0

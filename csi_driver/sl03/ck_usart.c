@@ -290,15 +290,21 @@ int32_t csi_usart_getchar(usart_handle_t handle, uint8_t *ch)
   \param[in]   ch  the input charater
   \return      error code
 */
+volatile int g_count0, g_count1, g_count2, g_count3;
 int32_t csi_usart_putchar(usart_handle_t handle, uint8_t ch)
 {
+    g_count0++;
     USART_NULL_PARAM_CHK(handle);
     ck_usart_priv_t *usart_priv = handle;
     ck_usart_reg_t *addr = (ck_usart_reg_t *)(usart_priv->base);
 
+    g_count1++;
     while ((!(addr->LSR & DW_LSR_TRANS_EMPTY)));
+    g_count2++;
 
     addr->THR = ch;
+
+    g_count3++;
 
     return 0;
 
