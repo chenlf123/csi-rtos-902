@@ -116,7 +116,7 @@ __task_switch_nosave:
 
     /* Run in machine mode */
     li      t0, MSTATUS_PRV1
-    csrw    mstatus, t0
+    csrs    mstatus, t0
 
     lw      t0, 60(sp)
     csrw    mepc, t0
@@ -192,7 +192,7 @@ NOVIC_IRQ_Default_Handler:
 
     /* Run in machine mode */
     li      t0, MSTATUS_PRV1
-    csrw    mstatus, t0
+    csrs    mstatus, t0
 
     lw      t0, 60(sp)
     csrw    mepc, t0
